@@ -1,0 +1,3400 @@
+{
+    "tags": {
+        "script": "a general extension that adds functionality",
+        "localization": "a localization extension that translates web ui into another language",
+        "tab": "adds a tab",
+        "dropdown": "adds a dropdown in the ui",
+        "ads": "contains ads",
+        "installed": "an extension that is already installed",
+        "training": "new type of training / assists with training.",
+        "models": "conversion and merging related.",
+        "UI related": "enhances the display or user interface experience.",
+        "prompting": "assists with writing words, for prompts.",
+        "editing": "an extension that changes images, not using stable diffusion.",
+        "manipulations": "an extension that changes images with stable diffusion.",
+        "online": "an extension which requires wifi to use, often API related.",
+        "animation": "an extension related to creating videos with stable diffusion.",
+        "query": "extracting info from images.",
+        "science": "experimentation with stable diffusion.",
+        "extras": "adds new functionality to the extras tab."
+    },
+    "extensions": [
+        {
+            "name": "Agent Scheduler",
+            "url": "https://ghp.ci/https://github.com/ArtVentureX/sd-webui-agent-scheduler.git",
+            "description": "Queue task and task history",
+            "added": "2023-06-23",
+            "tags": [
+                "tab"
+            ]
+        },
+        {
+            "name": "TemporalKit",
+            "url": "https://ghp.ci/https://github.com/CiaraStrawberry/TemporalKit",
+            "description": "An all in one solution for adding Temporal Stability to a Stable Diffusion Render via an automatic1111 extension",
+            "added": "2023-06-22",
+            "tags": [
+                "extras",
+                "animation"
+            ]
+        },
+        {
+            "name": "ua_UA Localization",
+            "url": "https://ghp.ci/https://github.com/razorback456/webui-localization-ua_UA",
+            "description": "Ukrainian localization",
+            "added": "2023-06-18",
+            "tags": [
+                "localization"
+            ]
+        },
+        {
+            "name": "Batch Checkpoints and Prompts",
+            "url": "https://ghp.ci/https://github.com/h43lb1t0/SD-WebUI-BatchCheckpointPrompt",
+            "description": "Test a base prompt with different checkpoints and for the checkpoints specific prompt templates ",
+            "added": "2023-06-16",
+            "tags": [
+                "script"
+            ]
+        },
+        {
+            "name": "Kandinsky",
+            "url": "https://ghp.ci/https://github.com/MMqd/kandinsky-for-automatic1111",
+            "description": "Adds a script to run Kandinsky 2.X",
+            "added": "2023-06-11",
+            "tags": [
+                "script",
+                "editing"
+            ]
+        },
+        {
+            "name": "Txt/Img to 3D Model",
+            "url": "https://ghp.ci/https://github.com/jtydhr88/sd-webui-txt-img-to-3d-model.git",
+            "description": "An extension integrated OpenAI Shap-E that allow you to generate 3D model from prompt or image",
+            "added": "2023-06-09",
+            "tags": [
+                "tab"
+            ]
+        },
+        {
+            "name": "sd-webui-openpose-editor",
+            "url": "https://ghp.ci/https://github.com/huchenlei/sd-webui-openpose-editor.git",
+            "description": "Integrated openpose editor for ControlNet. Full hand/face support.",
+            "added": "2023-06-07",
+            "tags": [
+                "editing"
+            ]
+        },
+        {
+            "name": "sd-webui-segment-anything",
+            "url": "https://ghp.ci/https://github.com/continue-revolution/sd-webui-segment-anything.git",
+            "description": "Segment Anything for Stable Diffusion WebUI. Automatically generate high-quality segmentations/masks for images by clicking or text prompting. Aim for connecting WebUI and ControlNet with Segment Anything and GroundingDINO to enhance Stable Diffusion/ControlNet inpainting (both single image and batch process), enhance ControlNet semantic segmentation, automate image matting and create LoRA/LyCORIS training set.",
+            "added": "2023-06-07",
+            "tags": [
+                "script",
+                "dropdown"
+            ]
+        },
+        {
+            "name": "Stable Diffusion AWS Extension",
+            "url": "https://ghp.ci/https://github.com/awslabs/stable-diffusion-aws-extension.git",
+            "description": "Allow user to migrate existing workloads including ckpt merge, model training, model inferencing onto AWS",
+            "added": "2023-06-01",
+            "tags": [
+                "tab",
+                "training",
+                "online"
+            ]
+        },
+        {
+            "name": "Aesthetic Gradients",
+            "url": "https://ghp.ci/https://github.com/AUTOMATIC1111/stable-diffusion-webui-aesthetic-gradients.git",
+            "description": "Allows training an embedding from one or few pictures, specifically meant for applying styles. Also, allows use of these specific embeddings to generated images.",
+            "added": "2022-11-01",
+            "tags": [
+                "tab",
+                "dropdown",
+                "training"
+            ]
+        },
+        {
+            "name": "Dreambooth",
+            "url": "https://ghp.ci/https://github.com/d8ahazard/sd_dreambooth_extension.git",
+            "description": "Dreambooth training based on Shivam Shiaro's repo, optimized for lower-VRAM GPUs.",
+            "added": "2022-11-07",
+            "tags": [
+                "tab",
+                "training"
+            ]
+        },
+        {
+            "name": "training-picker",
+            "url": "https://ghp.ci/https://github.com/Maurdekye/training-picker.git",
+            "description": "Adds a tab to the webui that allows the user to automatically extract keyframes from video, and manually extract 512x512 crops of those frames for use in model training.",
+            "added": "2022-11-06",
+            "tags": [
+                "tab",
+                "training"
+            ]
+        },
+        {
+            "name": "Dataset Tag Editor",
+            "url": "https://ghp.ci/https://github.com/toshiaki1729/stable-diffusion-webui-dataset-tag-editor.git",
+            "description": "Feature-rich UI tab that allows image viewing, search-filtering and editing.",
+            "added": "2022-11-01",
+            "tags": [
+                "tab",
+                "training"
+            ]
+        },
+        {
+            "name": "DreamArtist",
+            "url": "https://ghp.ci/https://github.com/7eu7d7/DreamArtist-sd-webui-extension.git",
+            "description": "Towards Controllable One-Shot Text-to-Image Generation via Contrastive Prompt-Tuning.",
+            "added": "2022-11-15",
+            "tags": [
+                "training"
+            ]
+        },
+        {
+            "name": "Hypernetwork-Monkeypatch-Extension",
+            "url": "https://ghp.ci/https://github.com/aria1th/Hypernetwork-MonkeyPatch-Extension.git",
+            "description": "Extension that provides additional training features for hypernetwork training. Also supports using multiple hypernetworks for inference.",
+            "added": "2023-01-12",
+            "tags": [
+                "tab",
+                "training"
+            ]
+        },
+        {
+            "name": "Custom Diffusion",
+            "url": "https://ghp.ci/https://github.com/guaneec/custom-diffusion-webui.git",
+            "description": "Custom Diffusion is, in short, finetuning-lite with TI, instead of tuning the whole model. Similar speed and memory requirements to TI and supposedly gives better results in less steps.",
+            "added": "2023-01-28",
+            "tags": [
+                "tab",
+                "training"
+            ]
+        },
+        {
+            "name": "Smart Process",
+            "url": "https://ghp.ci/https://github.com/d8ahazard/sd_smartprocess.git",
+            "description": "Smart pre-process including auto subject identification, caption subject swapping, and upscaling/facial restoration.",
+            "added": "2022-11-12",
+            "tags": [
+                "tab",
+                "editing",
+                "training"
+            ]
+        },
+        {
+            "name": "Embeddings editor",
+            "url": "https://ghp.ci/https://github.com/CodeExplode/stable-diffusion-webui-embedding-editor.git",
+            "description": "Allows you to manually edit textual inversion embeddings using sliders.",
+            "added": "2022-11-06",
+            "tags": [
+                "tab",
+                "models"
+            ]
+        },
+        {
+            "name": "Merge Board",
+            "url": "https://ghp.ci/https://github.com/bbc-mc/sdweb-merge-board.git",
+            "description": "Multiple lane merge support(up to 10). Save and Load your merging combination as Recipes, which is simple text.",
+            "added": "2022-11-21",
+            "tags": [
+                "tab",
+                "models"
+            ]
+        },
+        {
+            "name": "Model Converter",
+            "url": "https://ghp.ci/https://github.com/Akegarasu/sd-webui-model-converter.git",
+            "description": "Convert models to fp16/bf16 no-ema/ema-only safetensors. Convert/copy/delete any parts of model: unet, text encoder(clip), vae.",
+            "added": "2023-01-05",
+            "tags": [
+                "tab",
+                "models"
+            ]
+        },
+        {
+            "name": "Kohya-ss Additional Networks",
+            "url": "https://ghp.ci/https://github.com/kohya-ss/sd-webui-additional-networks.git",
+            "description": "Allows the Web UI to use LoRAs (1.X and 2.X) to generate images. Also allows editing .safetensors networks prompt metadata.",
+            "added": "2023-01-06",
+            "tags": [
+                "models"
+            ]
+        },
+        {
+            "name": "Merge Block Weighted",
+            "url": "https://ghp.ci/https://github.com/bbc-mc/sdweb-merge-block-weighted-gui.git",
+            "description": "Merge models with separate rate for each 25 U-Net block (input, middle, output).",
+            "added": "2023-01-13",
+            "tags": [
+                "tab",
+                "models"
+            ]
+        },
+        {
+            "name": "Embedding Merge",
+            "url": "https://ghp.ci/https://github.com/klimaleksus/stable-diffusion-webui-embedding-merge.git",
+            "description": "Merging Textual Inversion embeddings at runtime from string literals. Phrases and weight values also supported.",
+            "added": "2023-02-09",
+            "tags": [
+                "tab",
+                "models",
+                "manipulations"
+            ]
+        },
+        {
+            "name": "SuperMerger",
+            "url": "https://ghp.ci/https://github.com/hako-mikan/sd-webui-supermerger.git",
+            "description": "Merge and run without saving to drive. Sequential XY merge generations; extract and merge loras, bind loras to ckpt, merge block weights, and more.",
+            "added": "2023-02-18",
+            "tags": [
+                "tab",
+                "models"
+            ]
+        },
+        {
+            "name": "LoRA Block Weight",
+            "url": "https://ghp.ci/https://github.com/hako-mikan/sd-webui-lora-block-weight.git",
+            "description": "Applies LoRA strength; block by block on the fly. Includes presets, weight analysis, randomization, XY plot.",
+            "added": "2023-02-28",
+            "tags": [
+                "models"
+            ]
+        },
+        {
+            "name": "Image browser",
+            "url": "https://ghp.ci/https://github.com/AlUlkesh/stable-diffusion-webui-images-browser.git",
+            "description": "Provides an interface to browse created images in the web browser.",
+            "added": "2022-11-01",
+            "tags": [
+                "tab",
+                "UI related"
+            ]
+        },
+        {
+            "name": "Infinite image browsing",
+            "url": "https://ghp.ci/https://github.com/zanllp/sd-webui-infinite-image-browsing.git",
+            "description": "A fast image browser that allows browsing all images without paging, and supports joint search using image parameters, with a layout similar to VS Code.",
+            "added": "2023-04-16",
+            "tags": [
+                "tab",
+                "UI related"
+            ]
+        },
+        {
+            "name": "Inspiration",
+            "url": "https://ghp.ci/https://github.com/yfszzx/stable-diffusion-webui-inspiration.git",
+            "description": "Randomly display the pictures of the artist's or artistic genres typical style, more pictures of this artist or genre is displayed after selecting. So you don't have to worry about how hard it is to choose the right style of art when you create.",
+            "added": "2022-11-01",
+            "tags": [
+                "tab",
+                "UI related"
+            ]
+        },
+        {
+            "name": "Artists to study",
+            "url": "https://ghp.ci/https://github.com/camenduru/stable-diffusion-webui-artists-to-study.git",
+            "description": "Shows a gallery of generated pictures by artists separated into categories.",
+            "added": "2022-11-01",
+            "tags": [
+                "tab",
+                "UI related"
+            ]
+        },
+        {
+            "name": "Prompt Gallery",
+            "url": "https://ghp.ci/https://github.com/dr413677671/PromptGallery-stable-diffusion-webui.git",
+            "description": "Build a yaml file filled with prompts of your character, hit generate, and quickly preview them by their word attributes and modifiers.",
+            "added": "2022-12-02",
+            "tags": [
+                "tab",
+                "UI related"
+            ]
+        },
+        {
+            "name": "Infinity Grid Generator",
+            "url": "https://ghp.ci/https://github.com/mcmonkeyprojects/sd-infinity-grid-generator-script.git",
+            "description": "Build a yaml file with your chosen parameters, and generate infinite-dimensional grids. Built-in ability to add description text to fields. See readme for usage details.",
+            "added": "2022-12-09",
+            "tags": [
+                "UI related"
+            ]
+        },
+        {
+            "name": "Config-Presets",
+            "url": "https://ghp.ci/https://github.com/Zyin055/Config-Presets.git",
+            "description": "Adds a configurable dropdown to allow you to change UI preset settings in the txt2img and img2img tabs.",
+            "added": "2022-12-13",
+            "tags": [
+                "UI related"
+            ]
+        },
+        {
+            "name": "Preset Utilities",
+            "url": "https://ghp.ci/https://github.com/Gerschel/sd_web_ui_preset_utils.git",
+            "description": "Preset utility tool for ui. Offers compatibility with custom scripts. (to a limit)",
+            "added": "2022-12-19",
+            "tags": [
+                "UI related"
+            ]
+        },
+        {
+            "name": "openOutpaint extension",
+            "url": "https://ghp.ci/https://github.com/zero01101/openOutpaint-webUI-extension.git",
+            "description": "A tab with the full openOutpaint UI. Run with the --api flag.",
+            "added": "2022-12-23",
+            "tags": [
+                "tab",
+                "UI related",
+                "editing"
+            ]
+        },
+        {
+            "name": "quick-css",
+            "url": "https://ghp.ci/https://github.com/Gerschel/sd-web-ui-quickcss.git",
+            "description": "Extension for quickly selecting and applying custom.css files, for customizing look and placement of elements in ui.",
+            "added": "2022-12-30",
+            "tags": [
+                "tab",
+                "UI related"
+            ]
+        },
+        {
+            "name": "Aspect Ratio selector",
+            "url": "https://ghp.ci/https://github.com/alemelis/sd-webui-ar.git",
+            "description": "Adds image aspect ratio selector buttons.",
+            "added": "2023-02-04",
+            "tags": [
+                "UI related"
+            ]
+        },
+        {
+            "name": "Nevysha's Cozy Nest",
+            "url": "https://ghp.ci/https://github.com/Nevysha/Cozy-Nest.git",
+            "description": "Extension for an improved UI/UX. Find your cozy spot on Auto1111's webui!.",
+            "added": "2023-05-02",
+            "tags": [
+                "UI related"
+            ]
+        },
+        {
+            "name": "Catppuccin Theme",
+            "url": "https://ghp.ci/https://github.com/catppuccin/stable-diffusion-webui.git",
+            "description": "Adds various custom themes",
+            "added": "2023-02-04",
+            "tags": [
+                "UI related"
+            ]
+        },
+        {
+            "name": "Bilingual Localization",
+            "url": "https://ghp.ci/https://github.com/journey-ad/sd-webui-bilingual-localization.git",
+            "description": "Bilingual translation, no need to worry about how to find the original button. Compatible with language pack extensions, no need to re-import.",
+            "added": "2023-02-28",
+            "tags": [
+                "UI related"
+            ]
+        },
+        {
+            "name": "Dynamic Prompts",
+            "url": "https://ghp.ci/https://github.com/adieyal/sd-dynamic-prompts.git",
+            "description": "Implements an expressive template language for random or combinatorial prompt generation along with features to support deep wildcard directory structures.",
+            "added": "2022-11-01",
+            "tags": [
+                "prompting",
+                "online"
+            ]
+        },
+        {
+            "name": "Unprompted",
+            "url": "https://ghp.ci/https://github.com/ThereforeGames/unprompted.git",
+            "description": "Allows you to include various shortcodes in your prompts. You can pull text from files, set up your own variables, process text through conditional functions, and so much more - it's like wildcards on steroids. It now includes integrations like hard-prompts made easy, ControlNet, txt2img2img and txt2mask.",
+            "added": "2022-11-04",
+            "tags": [
+                "prompting",
+                "ads"
+            ]
+        },
+        {
+            "name": "StylePile",
+            "url": "https://ghp.ci/https://github.com/some9000/StylePile.git",
+            "description": "An easy way to mix and match elements to prompts that affect the style of the result.",
+            "added": "2022-11-24",
+            "tags": [
+                "prompting"
+            ]
+        },
+        {
+            "name": "Booru tag autocompletion",
+            "url": "https://ghp.ci/https://github.com/DominikDoom/a1111-sd-webui-tagcomplete.git",
+            "description": "Displays autocompletion hints for tags from image booru boards such as Danbooru. Uses local tag CSV files and includes a config for customization.",
+            "added": "2022-11-04",
+            "tags": [
+                "prompting"
+            ]
+        },
+        {
+            "name": "novelai-2-local-prompt",
+            "url": "https://ghp.ci/https://github.com/animerl/novelai-2-local-prompt.git",
+            "description": "Add a button to convert the prompts used in NovelAI for use in the WebUI. In addition, add a button that allows you to recall a previously used prompt.",
+            "added": "2022-11-05",
+            "tags": [
+                "prompting"
+            ]
+        },
+        {
+            "name": "tokenizer",
+            "url": "https://ghp.ci/https://github.com/AUTOMATIC1111/stable-diffusion-webui-tokenizer.git",
+            "description": "Adds a tab that lets you preview how CLIP model would tokenize your text.",
+            "added": "2022-11-05",
+            "tags": [
+                "tab",
+                "prompting"
+            ]
+        },
+        {
+            "name": "Randomize",
+            "url": "https://ghp.ci/https://github.com/innightwolfsleep/stable-diffusion-webui-randomize.git",
+            "description": "Allows for random parameters during txt2img generation. This script will function with others as well. Original author: https://git.mmaker.moe/mmaker/stable-diffusion-webui-randomize",
+            "added": "2022-11-11",
+            "tags": [
+                "prompting"
+            ]
+        },
+        {
+            "name": "conditioning-highres-fix",
+            "url": "https://ghp.ci/https://github.com/klimaleksus/stable-diffusion-webui-conditioning-highres-fix.git",
+            "description": "This is Extension for rewriting Inpainting conditioning mask strength value relative to Denoising strength at runtime. This is useful for Inpainting models such as sd-v1-5-inpainting.ckpt",
+            "added": "2022-11-11",
+            "tags": [
+                "prompting"
+            ]
+        },
+        {
+            "name": "model-keyword",
+            "url": "https://ghp.ci/https://github.com/mix1009/model-keyword.git",
+            "description": "Inserts matching keyword(s) to the prompt automatically. Update this extension to get the latest model+keyword mappings.",
+            "added": "2022-12-28",
+            "tags": [
+                "prompting"
+            ]
+        },
+        {
+            "name": "Prompt Generator",
+            "url": "https://ghp.ci/https://github.com/imrayya/stable-diffusion-webui-Prompt_Generator.git",
+            "description": "generate a prompt from a small base prompt using distilgpt2. Adds a tab with additional control of the model.",
+            "added": "2022-12-30",
+            "tags": [
+                "tab",
+                "prompting"
+            ]
+        },
+        {
+            "name": "Promptgen",
+            "url": "https://ghp.ci/https://github.com/AUTOMATIC1111/stable-diffusion-webui-promptgen.git",
+            "description": "Use transformers models to generate prompts.",
+            "added": "2023-01-18",
+            "tags": [
+                "tab",
+                "prompting"
+            ]
+        },
+        {
+            "name": "text2prompt",
+            "url": "https://ghp.ci/https://github.com/toshiaki1729/stable-diffusion-webui-text2prompt.git",
+            "description": "Generates anime tags using databases and models for tokenizing.",
+            "added": "2023-02-11",
+            "tags": [
+                "tab",
+                "prompting"
+            ]
+        },
+        {
+            "name": "Prompt Translator",
+            "url": "https://ghp.ci/https://github.com/butaixianran/Stable-Diffusion-Webui-Prompt-Translator",
+            "description": "A integrated translator for translating prompts to English using Deepl or Baidu.",
+            "added": "2023-02-11",
+            "tags": [
+                "tab",
+                "prompting",
+                "online"
+            ]
+        },
+        {
+            "name": "Deforum",
+            "url": "https://ghp.ci/https://github.com/deforum-art/deforum-for-automatic1111-webui.git",
+            "description": "The official port of Deforum, an extensive script for 2D and 3D animations, supporting keyframable sequences, dynamic math parameters (even inside the prompts), dynamic masking, depth estimation and warping.",
+            "added": "2022-11-01",
+            "tags": [
+                "tab",
+                "animation"
+            ]
+        },
+        {
+            "name": "gif2gif",
+            "url": "https://ghp.ci/https://github.com/LonicaMewinsky/gif2gif.git",
+            "description": "A script for img2img that extract a gif frame by frame for img2img generation and recombine them back into an animated gif",
+            "added": "2023-02-09",
+            "tags": [
+                "animation"
+            ]
+        },
+        {
+            "name": "Video Loopback",
+            "url": "https://ghp.ci/https://github.com/fishslot/video_loopback_for_webui.git",
+            "description": "A video2video script that tries to improve on the temporal consistency and flexibility of normal vid2vid.",
+            "added": "2023-02-13",
+            "tags": [
+                "animation"
+            ]
+        },
+        {
+            "name": "seed travel",
+            "url": "https://ghp.ci/https://github.com/yownas/seed_travel.git",
+            "description": "Small script for AUTOMATIC1111/stable-diffusion-webui to create images that exists between seeds.",
+            "added": "2022-11-09",
+            "tags": [
+                "animation"
+            ]
+        },
+        {
+            "name": "shift-attention",
+            "url": "https://ghp.ci/https://github.com/yownas/shift-attention.git",
+            "description": "Generate a sequence of images shifting attention in the prompt. This script enables you to give a range to the weight of tokens in a prompt and then generate a sequence of images stepping from the first one to the second.",
+            "added": "2022-11-09",
+            "tags": [
+                "animation"
+            ]
+        },
+        {
+            "name": "prompt travel",
+            "url": "https://ghp.ci/https://github.com/Kahsolt/stable-diffusion-webui-prompt-travel.git",
+            "description": "Extension script for AUTOMATIC1111/stable-diffusion-webui to travel between prompts in latent space.",
+            "added": "2022-11-11",
+            "tags": [
+                "animation"
+            ]
+        },
+        {
+            "name": "Steps Animation",
+            "url": "https://ghp.ci/https://github.com/vladmandic/sd-extension-steps-animation.git",
+            "description": "Create animation sequence from denoised intermediate steps.",
+            "added": "2023-01-21",
+            "tags": [
+                "animation"
+            ]
+        },
+        {
+            "name": "auto-sd-paint-ext",
+            "url": "https://ghp.ci/https://github.com/Interpause/auto-sd-paint-ext.git",
+            "description": "Krita Plugin.",
+            "added": "2022-11-04",
+            "tags": [
+                "editing"
+            ]
+        },
+        {
+            "name": "Batch Face Swap",
+            "url": "https://ghp.ci/https://github.com/kex0/batch-face-swap.git",
+            "description": "Automatically detects faces and replaces them.",
+            "added": "2023-01-13",
+            "tags": [
+                "editing"
+            ]
+        },
+        {
+            "name": "Depth Maps",
+            "url": "https://ghp.ci/https://github.com/thygate/stable-diffusion-webui-depthmap-script.git",
+            "description": "Depth Maps, Stereo Image, 3D Mesh and Video generator extension.",
+            "added": "2022-11-30",
+            "tags": [
+                "editing"
+            ]
+        },
+        {
+            "name": "multi-subject-render",
+            "url": "https://ghp.ci/https://github.com/Extraltodeus/multi-subject-render.git",
+            "description": "It is a depth aware extension that can help to create multiple complex subjects on a single image. It generates a background, then multiple foreground subjects, cuts their backgrounds after a depth analysis, paste them onto the background and finally does an img2img for a clean finish.",
+            "added": "2022-11-24",
+            "tags": [
+                "editing",
+                "manipulations"
+            ]
+        },
+        {
+            "name": "depthmap2mask",
+            "url": "https://ghp.ci/https://github.com/Extraltodeus/depthmap2mask.git",
+            "description": "Create masks for img2img based on a depth estimation made by MiDaS.",
+            "added": "2022-11-26",
+            "tags": [
+                "editing",
+                "manipulations"
+            ]
+        },
+        {
+            "name": "ABG_extension",
+            "url": "https://ghp.ci/https://github.com/KutsuyaYuki/ABG_extension.git",
+            "description": "Automatically remove backgrounds. Uses an onnx model fine-tuned for anime images. Runs on GPU.",
+            "added": "2022-12-24",
+            "tags": [
+                "editing"
+            ]
+        },
+        {
+            "name": "Pixel",
+            "url": "https://ghp.ci/https://github.com/Leodotpy/sd-pixel.git",
+            "description": "Quickly and easily perform downscaling, color palette limiting, and other useful pixel art effects through the extras tab.",
+            "added": "2023-05-05",
+            "tags": [
+                "editing",
+                "extras"
+            ]
+        },
+        {
+            "name": "Pixelization",
+            "url": "https://ghp.ci/https://github.com/AUTOMATIC1111/stable-diffusion-webui-pixelization.git",
+            "description": "Using pre-trained models, produce pixel art out of images in the extras tab.",
+            "added": "2023-01-23",
+            "tags": [
+                "editing",
+                "extras"
+            ]
+        },
+        {
+            "name": "haku-img",
+            "url": "https://ghp.ci/https://github.com/KohakuBlueleaf/a1111-sd-webui-haku-img.git",
+            "description": "Image utils extension. Allows blending, layering, hue and color adjustments, blurring and sketch effects, and basic pixelization.",
+            "added": "2023-01-17",
+            "tags": [
+                "tab",
+                "editing"
+            ]
+        },
+        {
+            "name": "Asymmetric Tiling",
+            "url": "https://ghp.ci/https://github.com/tjm35/asymmetric-tiling-sd-webui.git",
+            "description": "An always visible script extension to configure seamless image tiling independently for the X and Y axes.",
+            "added": "2023-01-13",
+            "tags": [
+                "manipulations"
+            ]
+        },
+        {
+            "name": "Latent Mirroring",
+            "url": "https://ghp.ci/https://github.com/dfaker/SD-latent-mirroring.git",
+            "description": "Applies mirroring and flips to the latent images to produce anything from subtle balanced compositions to perfect reflections",
+            "added": "2022-11-06",
+            "tags": [
+                "manipulations"
+            ]
+        },
+        {
+            "name": "Sonar",
+            "url": "https://ghp.ci/https://github.com/Kahsolt/stable-diffusion-webui-sonar.git",
+            "description": "Improve the generated image quality, searches for similar (yet even better!) images in the neighborhood of some known image, focuses on single prompt optimization rather than traveling between multiple prompts.",
+            "added": "2023-01-12",
+            "tags": [
+                "manipulations"
+            ]
+        },
+        {
+            "name": "Depth Image I/O",
+            "url": "https://ghp.ci/https://github.com/AnonymousCervine/depth-image-io-for-SDWebui.git",
+            "description": "An extension to allow managing custom depth inputs to Stable Diffusion depth2img models.",
+            "added": "2023-01-17",
+            "tags": [
+                "manipulations"
+            ]
+        },
+        {
+            "name": "Ultimate SD Upscale",
+            "url": "https://ghp.ci/https://github.com/Coyote-A/ultimate-upscale-for-automatic1111.git",
+            "description": "More advanced options for SD Upscale, less artifacts than original using higher denoise ratio (0.3-0.5).",
+            "added": "2023-01-10",
+            "tags": [
+                "manipulations"
+            ]
+        },
+        {
+            "name": "Prompt Fusion",
+            "url": "https://ghp.ci/https://github.com/ljleb/prompt-fusion-extension.git",
+            "description": "Adds prompt-travel and shift-attention-like interpolations (see exts), but during/within the sampling steps. Always-on + works w/ existing prompt-editing syntax. Various interpolation modes. See their wiki for more info.",
+            "added": "2023-01-28",
+            "tags": [
+                "manipulations"
+            ]
+        },
+        {
+            "name": "Neutral Prompt",
+            "url": "https://ghp.ci/https://github.com/ljleb/sd-webui-neutral-prompt.git",
+            "description": "Adds new keywords for manipulating noise blending and prompt interactions. Allows for organizing prompts in a hierarchical manner instead of a flat list.",
+            "added": "2023-05-28",
+            "tags": [
+                "manipulations"
+            ]
+        },
+        {
+            "name": "Dynamic Thresholding",
+            "url": "https://ghp.ci/https://github.com/mcmonkeyprojects/sd-dynamic-thresholding.git",
+            "description": "Adds customizable dynamic thresholding to allow high CFG Scale values without the burning / 'pop art' effect.",
+            "added": "2023-02-01",
+            "tags": [
+                "manipulations"
+            ]
+        },
+        {
+            "name": "anti-burn",
+            "url": "https://ghp.ci/https://github.com/klimaleksus/stable-diffusion-webui-anti-burn.git",
+            "description": "Smoothing generated images by skipping a few very last steps and averaging together some images before them.",
+            "added": "2023-02-09",
+            "tags": [
+                "manipulations"
+            ]
+        },
+        {
+            "name": "sd-webui-controlnet",
+            "url": "https://ghp.ci/https://github.com/Mikubill/sd-webui-controlnet.git",
+            "description": "WebUI extension for ControlNet. Note: (WIP), so don't expect seed reproducibility - as updates may change things.",
+            "added": "2023-02-18",
+            "tags": [
+                "manipulations"
+            ]
+        },
+        {
+            "name": "Latent Couple",
+            "url": "https://ghp.ci/https://github.com/ashen-sensored/stable-diffusion-webui-two-shot.git",
+            "description": "An extension of the built-in Composable Diffusion, allows you to determine the region of the latent space that reflects your subprompts. Note: New maintainer, uninstall prev. ext if needed.",
+            "added": "2023-02-18",
+            "tags": [
+                "manipulations"
+            ]
+        },
+        {
+            "name": "Composable LoRA",
+            "url": "https://ghp.ci/https://github.com/a2569875/stable-diffusion-webui-composable-lora.git",
+            "description": "Enables using AND keyword(composable diffusion) to limit LoRAs to subprompts. Useful when paired with Latent Couple extension.",
+            "added": "2023-02-25",
+            "tags": [
+                "manipulations"
+            ]
+        },
+        {
+            "name": "Auto TLS-HTTPS",
+            "url": "https://ghp.ci/https://github.com/papuSpartan/stable-diffusion-webui-auto-tls-https.git",
+            "description": "Allows you to easily, or even completely automatically start using HTTPS.",
+            "added": "2022-11-14",
+            "tags": [
+                "script"
+            ]
+        },
+        {
+            "name": "booru2prompt",
+            "url": "https://ghp.ci/https://github.com/Malisius/booru2prompt.git",
+            "description": "This SD extension allows you to turn posts from various image boorus into stable diffusion prompts. It does so by pulling a list of tags down from their API. You can copy-paste in a link to the post you want yourself, or use the built-in search feature to do it all without leaving SD.",
+            "added": "2022-11-21",
+            "tags": [
+                "tab",
+                "online"
+            ]
+        },
+        {
+            "name": "Gelbooru Prompt",
+            "url": "https://ghp.ci/https://github.com/antis0007/sd-webui-gelbooru-prompt.git",
+            "description": "Extension that gets tags for saved gelbooru images in AUTOMATIC1111's Stable Diffusion webui",
+            "added": "2022-12-20",
+            "tags": [
+                "online"
+            ]
+        },
+        {
+            "name": "e621 Prompt",
+            "url": "https://ghp.ci/https://github.com/nochnoe/sd-webui-e621-prompt.git",
+            "description": "Request tags of an image from e621 and convert them into a prompt",
+            "added": "2023-06-15",
+            "tags": [
+                "online",
+                "prompting"
+            ]
+        },
+        {
+            "name": "NSFW checker",
+            "url": "https://ghp.ci/https://github.com/AUTOMATIC1111/stable-diffusion-webui-nsfw-censor.git",
+            "description": "Replaces NSFW images with black.",
+            "added": "2022-12-10",
+            "tags": [
+                "script"
+            ]
+        },
+        {
+            "name": "Diffusion Defender",
+            "url": "https://ghp.ci/https://github.com/WildBanjos/DiffusionDefender.git",
+            "description": "Prompt blacklist, find and replace, for semi-private and public instances.",
+            "added": "2022-12-20",
+            "tags": [
+                "script"
+            ]
+        },
+        {
+            "name": "DH Patch",
+            "url": "https://ghp.ci/https://github.com/d8ahazard/sd_auto_fix.git",
+            "description": "Random patches by D8ahazard. Auto-load config YAML files for v2, 2.1 models; patch latent-diffusion to fix attention on 2.1 models (black boxes without no-half), whatever else I come up with.",
+            "added": "2022-12-16",
+            "tags": [
+                "script"
+            ]
+        },
+        {
+            "name": "Riffusion",
+            "url": "https://ghp.ci/https://github.com/enlyth/sd-webui-riffusion.git",
+            "description": "Use Riffusion model to produce music in gradio. To replicate original interpolation technique, input the prompt travel extension output frames into the riffusion tab.",
+            "added": "2022-12-19",
+            "tags": [
+                "tab"
+            ]
+        },
+        {
+            "name": "Save Intermediate Images",
+            "url": "https://ghp.ci/https://github.com/AlUlkesh/sd_save_intermediate_images.git",
+            "description": "Save intermediate images during the sampling process. You can also make videos from the intermediate images.",
+            "added": "2022-12-22",
+            "tags": [
+                "script"
+            ]
+        },
+        {
+            "name": "Add image number to grid",
+            "url": "https://ghp.ci/https://github.com/AlUlkesh/sd_grid_add_image_number.git",
+            "description": "Add the image's number to its picture in the grid.",
+            "added": "2023-01-01",
+            "tags": [
+                "script"
+            ]
+        },
+        {
+            "name": "Multiple Hypernetworks",
+            "url": "https://ghp.ci/https://github.com/antis0007/sd-webui-multiple-hypernetworks.git",
+            "description": "Adds the ability to apply multiple hypernetworks at once. Apply multiple hypernetworks sequentially, with different weights.",
+            "added": "2023-01-13",
+            "tags": [
+                "script"
+            ]
+        },
+        {
+            "name": "System Info",
+            "url": "https://ghp.ci/https://github.com/vladmandic/sd-extension-system-info.git",
+            "description": "System Info tab for WebUI which shows realtime information of the server. Also supports sending crowdsourced inference data as an option.",
+            "added": "2023-01-21",
+            "tags": [
+                "script",
+                "tab"
+            ]
+        },
+        {
+            "name": "OpenPose Editor",
+            "url": "https://ghp.ci/https://github.com/fkunn1326/openpose-editor.git",
+            "description": "This can add multiple pose characters, detect pose from image, save to PNG, and send to controlnet extension.",
+            "added": "2023-02-18",
+            "tags": [
+                "tab"
+            ]
+        },
+        {
+            "name": "Stable Horde Worker",
+            "url": "https://ghp.ci/https://github.com/sdwebui-w-horde/sd-webui-stable-horde-worker.git",
+            "description": "Worker Client for Stable Horde. Generate pictures for other users with your PC. Please see readme for additional instructions.",
+            "added": "2023-01-10",
+            "tags": [
+                "tab",
+                "online"
+            ]
+        },
+        {
+            "name": "Stable Horde Client",
+            "url": "https://ghp.ci/https://github.com/natanjunges/stable-diffusion-webui-stable-horde.git",
+            "description": "Stable Horde Client. Generate pictures using other user's PC. Useful if u have no GPU.",
+            "added": "2023-01-11",
+            "tags": [
+                "tab",
+                "online"
+            ]
+        },
+        {
+            "name": "Discord Rich Presence",
+            "url": "https://ghp.ci/https://github.com/kabachuha/discord-rpc-for-automatic1111-webui.git",
+            "description": "Provides connection to Discord RPC, showing a fancy table in the user profile.",
+            "added": "2023-01-20",
+            "tags": [
+                "online"
+            ]
+        },
+        {
+            "name": "mine-diffusion",
+            "url": "https://ghp.ci/https://github.com/fropych/mine-diffusion.git",
+            "description": "This extension converts images into blocks and creates schematics for easy importing into Minecraft using the Litematica mod.",
+            "added": "2023-02-11",
+            "tags": [
+                "tab"
+            ]
+        },
+        {
+            "name": "Aesthetic Image Scorer",
+            "url": "https://ghp.ci/https://github.com/tsngo/stable-diffusion-webui-aesthetic-image-scorer.git",
+            "description": "Calculates aesthetic score for generated images using CLIP+MLP Aesthetic Score Predictor based on Chad Scorer",
+            "added": "2022-11-01",
+            "tags": [
+                "query"
+            ]
+        },
+        {
+            "name": "Aesthetic Scorer",
+            "url": "https://ghp.ci/https://github.com/vladmandic/sd-extension-aesthetic-scorer.git",
+            "description": "Uses existing CLiP model with an additional small pretrained model to calculate perceived aesthetic score of an image.",
+            "added": "2023-01-21",
+            "tags": [
+                "query"
+            ]
+        },
+        {
+            "name": "cafe-aesthetic",
+            "url": "https://ghp.ci/https://github.com/p1atdev/stable-diffusion-webui-cafe-aesthetic.git",
+            "description": "Pre-trained model, determines if aesthetic/non-aesthetic, does 5 different style recognition modes, and Waifu confirmation. Also has a tab with Batch processing.",
+            "added": "2023-01-28",
+            "tags": [
+                "tab",
+                "query"
+            ]
+        },
+        {
+            "name": "Clip Interrogator",
+            "url": "https://ghp.ci/https://github.com/pharmapsychotic/clip-interrogator-ext.git",
+            "description": "Clip Interrogator by pharmapsychotic ported to an extension. Features a variety of clip models and interrogate settings.",
+            "added": "2023-02-21",
+            "tags": [
+                "tab",
+                "query"
+            ]
+        },
+        {
+            "name": "Visualize Cross-Attention",
+            "url": "https://ghp.ci/https://github.com/benkyoujouzu/stable-diffusion-webui-visualize-cross-attention-extension.git",
+            "description": "Generates highlighted sectors of a submitted input image, based on input prompts. Use with tokenizer extension. See the readme for more info.",
+            "added": "2022-11-25",
+            "tags": [
+                "tab",
+                "science"
+            ]
+        },
+        {
+            "name": "Dump U-Net",
+            "url": "https://ghp.ci/https://github.com/hnmr293/stable-diffusion-webui-dumpunet.git",
+            "description": "View different layers, observe U-Net feature maps. Image generation by giving different prompts for each block of the unet: https://note.com/kohya_ss/n/n93b7c01b0547",
+            "added": "2023-03-04",
+            "tags": [
+                "science"
+            ]
+        },
+        {
+            "name": "posex",
+            "url": "https://ghp.ci/https://github.com/hnmr293/posex.git",
+            "description": "Estimated Image Generator for Pose2Image. This extension allows moving the openpose figure in 3d space.",
+            "added": "2023-03-04",
+            "tags": [
+                "script"
+            ]
+        },
+        {
+            "name": "LLuL",
+            "url": "https://ghp.ci/https://github.com/hnmr293/sd-webui-llul.git",
+            "description": "Local Latent Upscaler. Target an area to selectively enhance details.",
+            "added": "2023-03-04",
+            "tags": [
+                "manipulations"
+            ]
+        },
+        {
+            "name": "CFG-Schedule-for-Automatic1111-SD",
+            "url": "https://ghp.ci/https://github.com/guzuligo/CFG-Schedule-for-Automatic1111-SD.git",
+            "description": "These scripts allow for dynamic CFG control during generation steps. With the right settings, this could help get the details of high CFG without damaging the generated image even with low denoising in img2img.",
+            "added": "2023-03-04",
+            "tags": [
+                "script"
+            ]
+        },
+        {
+            "name": "ebsynth_utility",
+            "url": "https://ghp.ci/https://github.com/s9roll7/ebsynth_utility.git",
+            "description": "Extension for creating videos using img2img and ebsynth. Output edited videos using ebsynth. Works with ControlNet extension.",
+            "added": "2023-03-04",
+            "tags": [
+                "tab",
+                "animation"
+            ]
+        },
+        {
+            "name": "VRAM Estimator",
+            "url": "https://ghp.ci/https://github.com/space-nuko/a1111-stable-diffusion-webui-vram-estimator.git",
+            "description": "Runs txt2img, img2img, highres-fix at increasing dimensions and batch sizes until OOM, and outputs data to graph.",
+            "added": "2023-03-05",
+            "tags": [
+                "tab"
+            ]
+        },
+        {
+            "name": "TiledDiffusion with Tiled VAE",
+            "url": "https://ghp.ci/https://github.com/pkuliyi2015/multidiffusion-upscaler-for-automatic1111.git",
+            "description": "Seamless large image regional generation and upscaling, along with vram-efficient tiled vae script.",
+            "added": "2023-03-08",
+            "tags": [
+                "manipulations"
+            ]
+        },
+        {
+            "name": "3D Model&Pose Loader",
+            "url": "https://ghp.ci/https://github.com/jtydhr88/sd-3dmodel-loader.git",
+            "description": "Load your 3D model/animation inside webui, or edit model pose as well, then send screenshot to txt2img or img2img to ControlNet.",
+            "added": "2023-03-11",
+            "tags": [
+                "tab"
+            ]
+        },
+        {
+            "name": "Corridor Crawler Outpainting",
+            "url": "https://ghp.ci/https://github.com/brick2face/corridor-crawler-outpainting.git",
+            "description": "Generate hallways with the depth-to-image model at 512 resolution. It can be tweaked to work with other models/resolutions.",
+            "added": "2023-03-11",
+            "tags": [
+                "tab"
+            ]
+        },
+        {
+            "name": "Panorama Viewer",
+            "url": "https://ghp.ci/https://github.com/GeorgLegato/sd-webui-panorama-viewer.git",
+            "description": "Provides a tab to display equirectangular images in interactive 3d-view.",
+            "added": "2023-03-11",
+            "tags": [
+                "tab"
+            ]
+        },
+        {
+            "name": "db-storage1111",
+            "url": "https://ghp.ci/https://github.com/takoyaro/db-storage1111.git",
+            "description": "Enables the storage of pictures and their metadata in a MongoDB database.",
+            "added": "2023-03-12",
+            "tags": [
+                "script"
+            ]
+        },
+        {
+            "name": "stable-diffusion-webui-rembg",
+            "url": "https://ghp.ci/https://github.com/AUTOMATIC1111/stable-diffusion-webui-rembg.git",
+            "description": "Removes backgrounds from pictures.",
+            "added": "2023-03-12",
+            "tags": [
+                "script",
+                "extras"
+            ]
+        },
+        {
+            "name": "sd-webui-tunnels",
+            "url": "https://ghp.ci/https://github.com/Bing-su/sd-webui-tunnels.git",
+            "description": "Add alternatives to the default tunneling methods. (including cloudflared)",
+            "added": "2023-03-13",
+            "tags": [
+                "script",
+                "online"
+            ]
+        },
+        {
+            "name": "3D Openpose Editor",
+            "url": "https://ghp.ci/https://github.com/nonnonstop/sd-webui-3d-open-pose-editor.git",
+            "description": "Edit the pose of 3D models in the WebUI, and generate Openpose/Depth/Normal/Canny maps for ControlNet.",
+            "added": "2023-03-16",
+            "tags": [
+                "tab"
+            ]
+        },
+        {
+            "name": "sd-webui-enable-checker",
+            "url": "https://ghp.ci/https://github.com/shirayu/sd-webui-enable-checker.git",
+            "description": "Switch background color by clicking the Enable buttons in SD Web UI",
+            "added": "2023-03-19",
+            "tags": [
+                "script"
+            ]
+        },
+        {
+            "name": "stable-diffusion-webui-state",
+            "url": "https://ghp.ci/https://github.com/ilian6806/stable-diffusion-webui-state.git",
+            "description": "Preserves the UI state after reload/restart.",
+            "added": "2023-03-19",
+            "tags": [
+                "script"
+            ]
+        },
+        {
+            "name": "text2video",
+            "url": "https://ghp.ci/https://github.com/kabachuha/sd-webui-text2video.git",
+            "description": "Brings a range of true text2video models, such as ModelScope and Videocrafter, into the WebUI.",
+            "added": "2023-03-19",
+            "tags": [
+                "tab",
+                "animation"
+            ]
+        },
+        {
+            "name": "Aspect Ratio Helper",
+            "url": "https://ghp.ci/https://github.com/thomasasfk/sd-webui-aspect-ratio-helper.git",
+            "description": "Easily scale dimensions while retaining the same aspect ratio.",
+            "added": "2023-03-20",
+            "tags": [
+                "script",
+                "dropdown",
+                "UI related"
+            ]
+        },
+        {
+            "name": "Canvas Zoom",
+            "url": "https://ghp.ci/https://github.com/richrobber2/canvas-zoom.git",
+            "description": "Added the ability to scale Inpaint, Sketch, and Inpaint Sketch. Adds useful hotkeys",
+            "added": "2023-03-27",
+            "tags": [
+                "UI related"
+            ]
+        },
+        {
+            "name": "Regional Prompter",
+            "url": "https://ghp.ci/https://github.com/hako-mikan/sd-webui-regional-prompter.git",
+            "description": "Specify different prompts for different regions; an alternative method and potential improvement to latent couple.",
+            "added": "2023-03-26",
+            "tags": [
+                "manipulations"
+            ]
+        },
+        {
+            "name": "Auto Translate",
+            "url": "https://ghp.ci/https://github.com/hyd998877/stable-diffusion-webui-auto-translate-language.git",
+            "description": "Language extension allows users to write prompts in their native language and automatically translate UI, without the need to manually download configuration files. New plugins can also be translated.",
+            "added": "2023-03-24",
+            "tags": [
+                "UI related"
+            ]
+        },
+        {
+            "name": "Prompt Translator",
+            "url": "https://ghp.ci/https://github.com/ParisNeo/prompt_translator.git",
+            "description": "Allows users to generate images based on prompts written in 50 different languages. It translates the prompts to english from a selected source language before generating the image.",
+            "added": "2023-03-28",
+            "tags": [
+                "prompting"
+            ]
+        },
+        {
+            "name": "Abysz LAB",
+            "url": "https://ghp.ci/https://github.com/AbyszOne/Abysz-LAB-Ext.git",
+            "description": "Temporal Coherence Tools",
+            "added": "2023-04-01",
+            "tags": [
+                "tab",
+                "animation"
+            ]
+        },
+        {
+            "name": "Negative Prompt Weight",
+            "url": "https://ghp.ci/https://github.com/muerrilla/stable-diffusion-NPW.git",
+            "description": "Allows users to set a global weight for the negative prompt.",
+            "added": "2023-04-02",
+            "tags": [
+                "script",
+                "manipulations",
+                "prompting"
+            ]
+        },
+        {
+            "name": "Discord - Dynamic Rich Presence",
+            "url": "https://ghp.ci/https://github.com/davehornik/sd-discord-rich_presence.git",
+            "description": "Will show your current sd model selected. Also showing if you are idle, or generating something - in that case, total image/s being generated.",
+            "added": "2023-04-04",
+            "tags": [
+                "online",
+                "script"
+            ]
+        },
+        {
+            "name": "PBRemTools",
+            "url": "https://ghp.ci/https://github.com/mattyamonaca/PBRemTools.git",
+            "description": "PBRemTools(Precise background remover tools) is a collection of tools to crop backgrounds from a single picture with high accuracy.",
+            "added": "2023-04-05",
+            "tags": [
+                "extras",
+                "editing"
+            ]
+        },
+        {
+            "name": "a1111-sd-webui-lycoris",
+            "url": "https://ghp.ci/https://github.com/KohakuBlueleaf/a1111-sd-webui-lycoris.git",
+            "description": "No longer needed for webui >= 1.5.0, Load lycoris: non-conventional rank adapters; in separate networks gallery tab.",
+            "added": "2023-04-10",
+            "tags": [
+                "script"
+            ]
+        },
+        {
+            "name": "sd-canvas-editor",
+            "url": "https://ghp.ci/https://github.com/jtydhr88/sd-canvas-editor.git",
+            "description": "A full capability canvas editor which you can use layer, text, image, elements and so on.",
+            "added": "2023-04-13",
+            "tags": [
+                "tab",
+                "online"
+            ]
+        },
+        {
+            "name": "Infinite Zoom",
+            "url": "https://ghp.ci/https://github.com/v8hid/infinite-zoom-automatic1111-webui.git",
+            "description": "allows users to create infinite zoom effect videos using stable diffusion outpainting method.",
+            "added": "2023-04-13",
+            "tags": [
+                "tab",
+                "animation"
+            ]
+        },
+        {
+            "name": "Eye Mask",
+            "url": "https://ghp.ci/https://github.com/ilian6806/stable-diffusion-webui-eyemask.git",
+            "description": "Puts an end to poorly drawn eyes by automatically identifying and redrawing them.",
+            "added": "2023-05-11",
+            "tags": [
+                "script",
+                "dropdown",
+                "manipulations"
+            ]
+        },
+        {
+            "name": "zh_CN Localization",
+            "url": "https://ghp.ci/https://github.com/dtlnor/stable-diffusion-webui-localization-zh_CN",
+            "description": "Simplified Chinese localization, recommend using with Bilingual Localization.",
+            "added": "2022-11-06",
+            "tags": [
+                "localization"
+            ]
+        },
+        {
+            "name": "zh_TW Localization",
+            "url": "https://ghp.ci/https://github.com/harukaxxxx/stable-diffusion-webui-localization-zh_TW.git",
+            "description": "Traditional Chinese localization",
+            "added": "2022-11-09",
+            "tags": [
+                "localization"
+            ]
+        },
+        {
+            "name": "ko_KR Localization",
+            "url": "https://ghp.ci/https://github.com/36DB/stable-diffusion-webui-localization-ko_KR",
+            "description": "Korean localization",
+            "added": "2022-11-06",
+            "tags": [
+                "localization"
+            ]
+        },
+        {
+            "name": "th_TH Localization",
+            "url": "https://ghp.ci/https://github.com/econDS/thai-localization-for-Automatic-stable-diffusion-webui",
+            "description": "Thai localization",
+            "added": "2022-12-30",
+            "tags": [
+                "localization"
+            ]
+        },
+        {
+            "name": "es_ES Localization",
+            "url": "https://ghp.ci/https://github.com/innovaciones/stable-diffusion-webui-localization-es_ES",
+            "description": "Spanish localization",
+            "added": "2022-11-09",
+            "tags": [
+                "localization"
+            ]
+        },
+        {
+            "name": "it_IT Localization",
+            "url": "https://ghp.ci/https://github.com/Harvester62/stable-diffusion-webui-localization-it_IT",
+            "description": "Italian localization",
+            "added": "2022-11-07",
+            "tags": [
+                "localization"
+            ]
+        },
+        {
+            "name": "de_DE Localization",
+            "url": "https://ghp.ci/https://github.com/Strothis/stable-diffusion-webui-de_DE",
+            "description": "German localization",
+            "added": "2022-11-07",
+            "tags": [
+                "localization"
+            ]
+        },
+        {
+            "name": "ja_JP Localization",
+            "url": "https://ghp.ci/https://github.com/AI-Creators-Society/stable-diffusion-webui-localization-ja_JP",
+            "description": "Japanese localization",
+            "added": "2022-11-07",
+            "tags": [
+                "localization"
+            ]
+        },
+        {
+            "name": "pt_BR Localization",
+            "url": "https://ghp.ci/https://github.com/M-art-ucci/stable-diffusion-webui-localization-pt_BR",
+            "description": "Brazillian portuguese localization",
+            "added": "2022-11-09",
+            "tags": [
+                "localization"
+            ]
+        },
+        {
+            "name": "tr_TR Localization",
+            "url": "https://ghp.ci/https://github.com/camenduru/stable-diffusion-webui-localization-tr_TR",
+            "description": "Turkish localization",
+            "added": "2022-11-12",
+            "tags": [
+                "localization"
+            ]
+        },
+        {
+            "name": "no_NO Localization",
+            "url": "https://ghp.ci/https://github.com/Cyanz83/stable-diffusion-webui-localization-no_NO",
+            "description": "Norwegian localization",
+            "added": "2022-11-16",
+            "tags": [
+                "localization"
+            ]
+        },
+        {
+            "name": "ru_RU Localization",
+            "url": "https://ghp.ci/https://github.com/ProfaneServitor/stable-diffusion-webui-localization-ru_RU",
+            "description": "Russian localization",
+            "added": "2022-11-20",
+            "tags": [
+                "localization"
+            ]
+        },
+        {
+            "name": "fi_FI Localization",
+            "url": "https://ghp.ci/https://github.com/otsoniemi/stable-diffusion-webui-localization-fi_FI",
+            "description": "Finnish localization",
+            "added": "2022-12-28",
+            "tags": [
+                "localization"
+            ]
+        },
+        {
+            "name": "zh_Hans Localization",
+            "url": "https://ghp.ci/https://github.com/hanamizuki-ai/stable-diffusion-webui-localization-zh_Hans.git",
+            "description": "Simplified Chinese localization.",
+            "added": "2023-03-13",
+            "tags": [
+                "localization"
+            ]
+        },
+        {
+            "name": "old localizations",
+            "url": "https://ghp.ci/https://github.com/AUTOMATIC1111/stable-diffusion-webui-old-localizations.git",
+            "description": "Old unmaintained localizations that used to be a part of main repository",
+            "added": "2022-11-08",
+            "tags": [
+                "localization"
+            ]
+        },
+        {
+            "name": "Model Organizer",
+            "url": "https://ghp.ci/https://github.com/alexandersokol/sd-model-organizer.git",
+            "description": "Allows to store and manage own model collections, add information, notes, previews, download links of model. Easily download from any external direct link or shared file link from Google Drive. Share own models collection with json file or use remote Firestore database to make it available and synced on several devices.",
+            "added": "2023-05-05",
+            "tags": [
+                "tab",
+                "UI related",
+                "online"
+            ]
+        },
+        {
+            "name": "Model Preset Manager",
+            "url": "https://ghp.ci/https://github.com/rifeWithKaiju/model_preset_manager.git",
+            "description": "Lets you create and apply presets per model for all generation data (e.g. prompt, negative prompt, cfg_scale, resolution, sampler, clip skip, steps, etc). Also automatically fetches model trigger words and thumbnails from Civitai.",
+            "added": "2023-05-15",
+            "tags": [
+                "online",
+                "prompting",
+                "tab"
+            ]
+        },
+        {
+            "name": "SD-CN-Animation",
+            "url": "https://ghp.ci/https://github.com/volotat/SD-CN-Animation.git",
+            "description": "Notice: Incompatible with webui 1.8.   Allows users to create video2video and text2video animations using any SD models as a backbone. Please, make sure that 'sd-webui-controlnet' extension is also installed.",
+            "added": "2023-05-06",
+            "tags": [
+                "tab",
+                "animation"
+            ]
+        },
+        {
+            "name": "Model toolkit",
+            "url": "https://ghp.ci/https://github.com/arenasys/stable-diffusion-webui-model-toolkit.git",
+            "description": "A Multipurpose toolkit for pruning, editing and fixing models.",
+            "added": "2023-05-10",
+            "tags": [
+                "tab",
+                "models"
+            ]
+        },
+        {
+            "name": "sd-webui-prompt-all-in-one",
+            "url": "https://ghp.ci/https://github.com/Physton/sd-webui-prompt-all-in-one",
+            "description": "Improve the user experience of the prompt/negative prompt input box. It has a more intuitive and powerful input interface that offers features such as automatic translation, history records, and favorites.",
+            "added": "2023-05-08",
+            "tags": [
+                "UI related",
+                "prompting",
+                "online"
+            ]
+        },
+        {
+            "name": "sd-model-preview-xd",
+            "url": "https://ghp.ci/https://github.com/CurtisDS/sd-model-preview-xd",
+            "description": "Adds model, LoRA and embedding previews to the UI including preview images, descriptions and LoRA prompt lists.",
+            "added": "2023-05-12",
+            "tags": [
+                "tab",
+                "UI related"
+            ]
+        },
+        {
+            "name": "ADetailer",
+            "url": "https://ghp.ci/https://github.com/Bing-su/adetailer.git",
+            "description": "Automatic detection, masking and inpainting tool for details",
+            "added": "2023-05-12",
+            "tags": [
+                "manipulations"
+            ]
+        },
+        {
+            "name": "Weight Gradient",
+            "url": "https://ghp.ci/https://github.com/DingoBite/weight_gradient",
+            "description": "Allows you to dynamically change the weights of tokens during generation. Useful in morphing.",
+            "added": "2023-05-11",
+            "tags": [
+                "prompting"
+            ]
+        },
+        {
+            "name": "One Button Prompt",
+            "url": "https://ghp.ci/https://github.com/AIrjen/OneButtonPrompt",
+            "description": "One Button Prompt is a script for beginners and advanced users that generates an entire prompt from scratch. It is random, but controlled. You simply load up the script and press generate, and let it inspire you.",
+            "added": "2023-05-14",
+            "tags": [
+                "script",
+                "prompting"
+            ]
+        },
+        {
+            "name": "Miaoshouai Assistant",
+            "url": "https://ghp.ci/https://github.com/miaoshouai/miaoshouai-assistant.git",
+            "description": "Miaoshouai Assistant allows you to enhance your automatic1111 webui user experience, including updating boot settings, freeup vram, managing and downloading your models from civitai.com and liandange.com, generate prompts from chatgpt all through a single tab.",
+            "added": "2023-05-18",
+            "tags": [
+                "tab",
+                "models",
+                "UI related",
+                "online"
+            ]
+        },
+        {
+            "name": "miniPaint",
+            "url": "https://ghp.ci/https://github.com/0Tick/a1111-mini-paint",
+            "description": "The miniPaint extension allows for better image editing capabilites. Edit images simply direct inside the webui!",
+            "added": "2023-05-16",
+            "tags": [
+                "tab",
+                "editing"
+            ]
+        },
+        {
+            "name": "StableSR",
+            "url": "https://ghp.ci/https://github.com/pkuliyi2015/sd-webui-stablesr.git",
+            "description": "WebUI extension for StableSR - a powerful upscaler for both realistic and anime images",
+            "added": "2023-05-22",
+            "tags": [
+                "manipulations"
+            ]
+        },
+        {
+            "name": "Web UI client queue",
+            "url": "https://ghp.ci/https://github.com/Kryptortio/SDAtom-WebUi-client-queue-ext.git",
+            "description": "Adds a queue function to the web ui that processes a set of settings one or more times, it can then load a different set of settings and so on.",
+            "added": "2023-05-23",
+            "tags": [
+                "script",
+                "UI related",
+                "prompting"
+            ]
+        },
+        {
+            "name": "Distributed",
+            "url": "https://ghp.ci/https://github.com/papuSpartan/stable-diffusion-webui-distributed.git",
+            "description": "Generate batches more quickly by chaining together separate webui instances",
+            "added": "2023-05-23",
+            "tags": [
+                "script"
+            ]
+        },
+        {
+            "name": "StableStudio Adapter",
+            "url": "https://ghp.ci/https://github.com/jtydhr88/sd-webui-StableStudio.git",
+            "description": "A custom extension for webui to extend rest APIs to do some local operations, using in StableStudio.",
+            "added": "2023-05-24",
+            "tags": [
+                "script"
+            ]
+        },
+        {
+            "name": "Quick Tab Switch",
+            "url": "https://ghp.ci/https://github.com/AJpon/a1111-sd-webui-quickswitch.git",
+            "description": "Simple tab switcher for Stable Diffusion WebUI. From now on, no matter how many tabs you add, no more finding for them by yourself!",
+            "added": "2023-05-26",
+            "tags": [
+                "script",
+                "UI related"
+            ]
+        },
+        {
+            "name": "Lua",
+            "url": "https://ghp.ci/https://github.com/yownas/sd-webui-lua.git",
+            "description": "Generate images with Lua scripts in Stable Diffusion webui.",
+            "added": "2023-05-29",
+            "tags": [
+                "tab",
+                "science"
+            ]
+        },
+        {
+            "name": "Model Downloader",
+            "url": "https://ghp.ci/https://github.com/Iyashinouta/sd-model-downloader.git",
+            "description": "Alternative tool for Downloading Models, Recommended for Cloud users.",
+            "added": "2023-06-05",
+            "tags": [
+                "tab",
+                "script",
+                "online"
+            ]
+        },
+        {
+            "name": "Styles Editor",
+            "url": "https://ghp.ci/https://github.com/chrisgoringe/Styles-Editor.git",
+            "description": "Adds a spreadsheet-style editor for saved styles, with support for filtering, search and replace, and subdividing styles into multiple files",
+            "added": "2023-06-06",
+            "tags": [
+                "tab",
+                "UI related",
+                "prompting"
+            ]
+        },
+        {
+            "name": "Clip I/O",
+            "url": "https://ghp.ci/https://github.com/Filexor/Clip_IO.git",
+            "description": "The extension allows you to investigate embeddings/conditioning and feed conditioning to Stable Diffusion.",
+            "added": "2023-06-06",
+            "tags": [
+                "script",
+                "tab",
+                "science"
+            ]
+        },
+        {
+            "name": "Inpaint Anything",
+            "url": "https://ghp.ci/https://github.com/Uminosachi/sd-webui-inpaint-anything.git",
+            "description": "The Inpaint Anything extension performs SD inpainting, cleaner, ControlNet inpaint, and sending a mask to img2img, using a mask selected from the segmentation output of Segment Anything.",
+            "added": "2023-06-09",
+            "tags": [
+                "tab",
+                "editing",
+                "manipulations"
+            ]
+        },
+        {
+            "name": "QR Code Generator",
+            "url": "https://ghp.ci/https://github.com/missionfloyd/webui-qrcode-generator.git",
+            "description": "Create QR Codes for ControlNet.",
+            "added": "2023-06-08",
+            "tags": [
+                "script",
+                "tab"
+            ]
+        },
+        {
+            "name": "sd-webui-roop",
+            "url": "https://ghp.ci/https://github.com/s0md3v/sd-webui-roop",
+            "description": "Enable face swapping with reference image.",
+            "added": "2023-06-09",
+            "tags": [
+                "editing",
+                "manipulations"
+            ]
+        },
+        {
+            "name": "sd-webui-color-enhance",
+            "url": "https://git.mmaker.moe/mmaker/sd-webui-color-enhance.git",
+            "description": "Enhance image colors using GIMP/GEGL \"Color Enhance\" algorithm.",
+            "added": "2023-06-10",
+            "tags": [
+                "editing",
+                "extras"
+            ]
+        },
+        {
+            "name": "sd-webui-bluescape",
+            "url": "https://ghp.ci/https://github.com/Bluescape/sd-webui-bluescape",
+            "description": "Upload generated images to a Bluescape workspace for review and collaboration.",
+            "added": "2023-06-13",
+            "tags": [
+                "tab",
+                "online"
+            ]
+        },
+        {
+            "name": "sd-webui-prompt_history",
+            "url": "https://ghp.ci/https://github.com/namkazt/sd-webui-prompt-history",
+            "description": "Automatic store your generation info with image and apply back anytime.",
+            "added": "2023-06-14",
+            "tags": [
+                "UI related",
+                "tab"
+            ]
+        },
+        {
+            "name": "Danbooru Prompt",
+            "url": "https://ghp.ci/https://github.com/EnsignMK/danbooru-prompt.git",
+            "description": "Fetch tags from Danbooru images link",
+            "tags": [
+                "online"
+            ],
+            "added": "2023-06-25"
+        },
+        {
+            "name": "Pixel art",
+            "url": "https://ghp.ci/https://github.com/mrreplicart/sd-webui-pixelart.git",
+            "description": "Extension that provides basic functionality for pixel art: downscaling, palette limiting, grayscale, black&white, ability to change image colors with custom color palette",
+            "tags": [
+                "script",
+                "editing",
+                "extras"
+            ],
+            "added": "2023-06-28"
+        },
+        {
+            "name": "Lobe Theme",
+            "url": "https://ghp.ci/https://github.com/canisminor1990/sd-webui-lobe-theme.git",
+            "description": "The modern theme for stable diffusion webui, legacy verison a.k.a kitchen theme.",
+            "added": "2023-06-28",
+            "tags": [
+                "UI related",
+                "online"
+            ]
+        },
+        {
+            "name": "Kitchen Theme",
+            "url": "https://ghp.ci/https://github.com/canisminor1990/sd-webui-kitchen-theme-legacy.git",
+            "description": "Custom Theme.",
+            "added": "2023-02-28",
+            "tags": [
+                "UI related",
+                "online"
+            ]
+        },
+        {
+            "name": "IF_prompt_MKR",
+            "url": "https://ghp.ci/https://github.com/if-ai/IF_prompt_MKR.git",
+            "description": "Creates prompts using a local LlMs via Oobabooga text webUI API",
+            "tags": [
+                "script",
+                "prompting"
+            ],
+            "added": "2023-06-30"
+        },
+        {
+            "name": "3D Editor",
+            "url": "https://ghp.ci/https://github.com/jtydhr88/sd-webui-3d-editor.git",
+            "description": "3D modeling features (add/edit basic elements, load your custom model, modify scene and so on), then send screenshot to txt2img or img2img as your ControlNet's reference image, basing on ThreeJS editor.",
+            "tags": [
+                "tab"
+            ],
+            "added": "2023-06-30"
+        },
+        {
+            "name": "Aspect Ratio selector plus",
+            "url": "https://ghp.ci/https://github.com/LEv145/--sd-webui-ar-plus",
+            "description": "Fork of Aspect Ratio selector with new features and logic for aspect ratio",
+            "tags": [
+                "UI related"
+            ],
+            "added": "2023-06-30"
+        },
+        {
+            "name": "SD Delete Button",
+            "url": "https://ghp.ci/https://github.com/AlUlkesh/sd_delete_button.git",
+            "description": "Add a delete button for txt2img and img2img using Send2Trash",
+            "tags": [
+                "UI related"
+            ],
+            "added": "2023-06-30"
+        },
+        {
+            "name": "sd-webui-qrcode-toolkit",
+            "url": "https://ghp.ci/https://github.com/antfu/sd-webui-qrcode-toolkit.git",
+            "description": "Integration with Anthony's QR Toolkit for easy QR Code generation and verification.",
+            "added": "2023-07-02",
+            "tags": [
+                "tab",
+                "editing",
+                "online"
+            ]
+        },
+        {
+            "name": "SadTalker",
+            "url": "https://ghp.ci/https://github.com/OpenTalker/SadTalker.git",
+            "description": "Generating talking head videos with facial image and speech audio",
+            "tags": [
+                "tab",
+                "animation"
+            ],
+            "added": "2023-07-07"
+        },
+        {
+            "name": "Auto-Photoshop-StableDiffusion-Plugin",
+            "url": "https://ghp.ci/https://github.com/AbdullahAlfaraj/Auto-Photoshop-StableDiffusion-Plugin.git",
+            "description": "Adds API routes for Auto-Photoshop-StableDiffusion-Plugin",
+            "tags": [
+                "script"
+            ],
+            "added": "2023-07-07"
+        },
+        {
+            "name": "Civitai Shortcut",
+            "url": "https://ghp.ci/https://github.com/sunnyark/civitai-shortcut.git",
+            "description": "This extension allows you to register the models available on civitai as favorites (shortcuts) in sdui, and then you can download the models using the registered shortcuts when needed.",
+            "tags": [
+                "models",
+                "extras"
+            ],
+            "added": "2023-07-08"
+        },
+        {
+            "name": "WD 1.4 Tagger",
+            "url": "https://ghp.ci/https://github.com/picobyte/stable-diffusion-webui-wd14-tagger.git",
+            "description": "Interrogates single or multiple image files using various alternative models, similar to deepdanbooru interrogate.",
+            "added": "2022-11-20",
+            "tags": [
+                "tab",
+                "training"
+            ]
+        },
+        {
+            "name": "Loopback Scaler",
+            "url": "https://ghp.ci/https://github.com/Elldreth/loopback_scaler.git",
+            "description": "Iteratively improves image quality and detail via user-controlled, gradual resolution increments.",
+            "tags": [
+                "script",
+                "manipulations"
+            ],
+            "added": "2023-07-11"
+        },
+        {
+            "name": "Mask2Background",
+            "url": "https://ghp.ci/https://github.com/limithit/Mask2Background.git",
+            "description": "Take a png image, generate a background and mask, then send it to img2img to generate a new backgrou",
+            "tags": [
+                "tab"
+            ],
+            "added": "2023-07-11"
+        },
+        {
+            "name": "ComfyUI",
+            "url": "https://ghp.ci/https://github.com/ModelSurge/sd-webui-comfyui.git",
+            "description": "Embed ComfyUI workflows in different sections of the Webui",
+            "tags": [
+                "script",
+                "tab",
+                "UI related",
+                "manipulations"
+            ],
+            "added": "2023-07-14"
+        },
+        {
+            "name": "GPU temperature protection",
+            "url": "https://ghp.ci/https://github.com/w-e-w/stable-diffusion-webui-GPU-temperature-protection.git",
+            "description": "Pause image generation when GPU is to hot, suppots NVIDIA & AMD GPUs",
+            "tags": [
+                "script"
+            ],
+            "added": "2023-07-14"
+        },
+        {
+            "name": "zoom-image",
+            "url": "https://ghp.ci/https://github.com/viyiviyi/stable-diffusion-webui-zoomimage.git",
+            "description": "Pan and Zoom for fullscreen image viewer with mouse and gesture.",
+            "tags": [
+                "script"
+            ],
+            "added": "2023-07-15"
+        },
+        {
+            "name": "Shutdown button",
+            "url": "https://ghp.ci/https://github.com/EnsignMK/sd_shutdown_button.git",
+            "description": "Adds a button in quick settings for killing webui",
+            "tags": [
+                "script",
+                "UI related"
+            ],
+            "added": "2023-07-15"
+        },
+        {
+            "name": "Latent Upscale",
+            "url": "https://ghp.ci/https://github.com/feynlee/latent-upscale.git",
+            "description": "Provides more options for latent upscale in img2img, surpassing those offered by Hires Fix for the txt2img process.",
+            "tags": [
+                "script"
+            ],
+            "added": "2023-07-15"
+        },
+        {
+            "name": "sd-history-slider",
+            "url": "https://ghp.ci/https://github.com/LucasMali/sd-history-slider",
+            "description": "A slider change the prompt based on the history of what was used.",
+            "tags": [
+                "UI related"
+            ],
+            "added": "2023-07-18"
+        },
+        {
+            "name": "prompts filter",
+            "url": "https://ghp.ci/https://github.com/viyiviyi/prompts-filter.git",
+            "description": "Filter out banned words in prompts and negative_prompts, and also filter out duplicate prompts and empty prompts.",
+            "tags": [
+                "script"
+            ],
+            "added": "2023-07-20"
+        },
+        {
+            "name": "sd-webui-animatediff",
+            "url": "https://ghp.ci/https://github.com/continue-revolution/sd-webui-animatediff.git",
+            "description": "This extension integrates AnimateDiff into WebUI and generates GIF just like generating images",
+            "added": "2023-07-20",
+            "tags": [
+                "script",
+                "dropdown"
+            ]
+        },
+        {
+            "name": "Dynamic Javascript",
+            "url": "https://ghp.ci/https://github.com/pmcculler/sd-dynamic-javascript",
+            "description": "Embed Javascript code blocks in positive and negative prompts.",
+            "tags": [
+                "prompting"
+            ],
+            "added": "2023-07-22"
+        },
+        {
+            "name": "Detection Detailer",
+            "url": "https://ghp.ci/https://github.com/Bing-su/dddetailer.git",
+            "description": "Dotgeo(hijack) Detection Detailer. Fork of ddetailer. Object detection and auto-mask extension for Stable Diffusion web UI.",
+            "added": "2022-11-09",
+            "tags": [
+                "editing"
+            ]
+        },
+        {
+            "name": "seamless-tile-inpainting",
+            "url": "https://ghp.ci/https://github.com/brick2face/seamless-tile-inpainting.git",
+            "description": "A script for making tiles seamless using inpainting. Designed for SD1.5 inpainting model at 512x512, but should work fine with other inpainting models.",
+            "added": "2023-07-27",
+            "tags": [
+                "script"
+            ]
+        },
+        {
+            "name": "FaceSwapLab",
+            "url": "https://ghp.ci/https://github.com/glucauze/sd-webui-faceswaplab",
+            "description": "Extended faceswap with multiple faceswaps, inpainting, checkpoints.",
+            "tags": [
+                "editing",
+                "manipulations"
+            ],
+            "added": "2023-07-27"
+        },
+        {
+            "name": "Style Selector for SDXL 1.0",
+            "url": "https://ghp.ci/https://github.com/ahgsql/StyleSelectorXL.git",
+            "description": "a Automatic1111 Extension allows users to select and apply different styles to their inputs using SDXL 1.0.",
+            "tags": [
+                "prompting"
+            ],
+            "added": "2023-07-30"
+        },
+        {
+            "name": "sd-webui-oldsix-prompt",
+            "url": "https://ghp.ci/https://github.com/thisjam/sd-webui-oldsix-prompt.git",
+            "description": "Prompt library - comes with built-in Chinese libeary",
+            "added": "2023-07-30",
+            "tags": [
+                "prompting"
+            ]
+        },
+        {
+            "name": "Custom Hires Fix",
+            "url": "https://ghp.ci/https://github.com/wcde/custom-hires-fix-for-automatic1111.git",
+            "description": "Adds custom hires fix with advanced features to improve details.",
+            "tags": [
+                "script",
+                "manipulations"
+            ],
+            "added": "2023-07-30"
+        },
+        {
+            "name": "Refiner",
+            "url": "https://ghp.ci/https://github.com/wcde/sd-webui-refiner.git",
+            "description": "Adds support for SD XL refiner models, it's extending the pipeline to process the last steps with the refiner models Unet.",
+            "tags": [
+                "script",
+                "manipulations"
+            ],
+            "added": "2023-07-30"
+        },
+        {
+            "name": "sd-webui-deoldify",
+            "url": "https://ghp.ci/https://github.com/SpenserCai/sd-webui-deoldify",
+            "description": "DeOldify for Stable Diffusion WebUI:Colorize of old photos and old video, based on deoldify",
+            "added": "2023-08-04",
+            "tags": [
+                "script",
+                "extras",
+                "tab",
+                "animation"
+            ]
+        },
+        {
+            "name": "sd-wav2lip-uhq",
+            "url": "https://ghp.ci/https://github.com/numz/sd-wav2lip-uhq",
+            "description": "All-in-one solution for creating high-quality lip-sync videos based on video or image",
+            "tags": [
+                "tab",
+                "editing",
+                "animation",
+                "ads"
+            ],
+            "added": "2023-08-04"
+        },
+        {
+            "name": "Controlnet Fastload",
+            "url": "https://ghp.ci/https://github.com/pk5ls20/sd-webui-controlnet-fastload.git",
+            "description": "Save and load controlnet parameters",
+            "tags": [
+                "script",
+                "manipulations"
+            ],
+            "added": "2023-08-07"
+        },
+        {
+            "name": "LoRA Control",
+            "url": "https://ghp.ci/https://github.com/cheald/sd-webui-loractl.git",
+            "description": "Dynamically control the weights of LoRAs during image generation",
+            "tags": [
+                "models",
+                "prompting",
+                "manipulations"
+            ],
+            "added": "2023-08-07"
+        },
+        {
+            "name": "Wildcards",
+            "url": "https://ghp.ci/https://github.com/AUTOMATIC1111/stable-diffusion-webui-wildcards.git",
+            "description": "Allows you to use __name__ syntax in your prompt to get a random line from a file named name.txt in the wildcards directory.",
+            "tags": [
+                "prompting"
+            ],
+            "added": "2023-08-09"
+        },
+        {
+            "name": "SD Ratio Lock",
+            "url": "https://ghp.ci/https://github.com/bit9labs/sd-ratio-lock.git",
+            "description": "Locks image aspect ratio",
+            "tags": [
+                "UI related"
+            ],
+            "added": "2023-08-09"
+        },
+        {
+            "name": "sd-webui-chatgpt",
+            "url": "https://ghp.ci/https://github.com/NON906/sd-webui-chatgpt.git",
+            "description": "Using ChatGPT in Stable Diffusion web UI. When you say something like 'generate an image', ChatGPT will automatically generate a prompt and generate an image.",
+            "tags": [
+                "tab",
+                "online"
+            ],
+            "added": "2023-08-11"
+        },
+        {
+            "name": "sd-webui-auto-tweet.json",
+            "url": "https://ghp.ci/https://github.com/sinano1107/sd-webui-auto-tweet.git",
+            "description": "The generated images are automatically posted to your Twitter feed. There is also a button to post the generated image to Twitter.",
+            "tags": [
+                "script",
+                "tab",
+                "online"
+            ],
+            "added": "2023-08-12"
+        },
+        {
+            "name": "zh_Hant Localization",
+            "url": "https://ghp.ci/https://github.com/bluelovers/stable-diffusion-webui-localization-zh_Hant.git",
+            "description": "Traditional Chinese localization (mixin zh_TW and zh_Hans)",
+            "tags": [
+                "localization"
+            ],
+            "added": "2023-08-12"
+        },
+        {
+            "name": "SD Webui Vectorscope CC",
+            "url": "https://ghp.ci/https://github.com/Haoming02/sd-webui-vectorscope-cc.git",
+            "description": "Adjust the output images brightness contrast saturation through latent noise manipulation during generation",
+            "tags": [
+                "script",
+                "manipulations"
+            ],
+            "added": "2023-08-15"
+        },
+        {
+            "name": "Prompt Formatter - by uwidev",
+            "url": "https://ghp.ci/https://github.com/uwidev/sd_extension-prompt_formatter.git",
+            "description": "Remove excess spaces and convert nested brackets",
+            "tags": [
+                "script",
+                "prompting"
+            ],
+            "added": "2023-08-16"
+        },
+        {
+            "name": "Prompt Format - by Haoming02",
+            "url": "https://ghp.ci/https://github.com/Haoming02/sd-webui-prompt-format.git",
+            "description": "Remove duplicated spaces and commas.",
+            "tags": [
+                "script",
+                "prompting"
+            ],
+            "added": "2023-08-17"
+        },
+        {
+            "name": "FABRIC",
+            "url": "https://ghp.ci/https://github.com/dvruette/sd-webui-fabric.git",
+            "description": "Personalizing Diffusion Models with Iterative Feedback, a training-free approach that conditions the diffusion process on a set of feedback images",
+            "tags": [
+                "script",
+                "manipulations"
+            ],
+            "added": "2023-08-17"
+        },
+        {
+            "name": "Webpage close confirmation dialogue",
+            "url": "https://ghp.ci/https://github.com/w-e-w/sdwebui-close-confirmation-dialogue.git",
+            "description": "Adds a confirmation dialogue when you try to \"close\" leave\" or \"reload\" the webpage",
+            "tags": [
+                "UI related"
+            ],
+            "added": "2023-08-17"
+        },
+        {
+            "name": "sd-webui-discord-ex",
+            "url": "https://ghp.ci/https://github.com/SpenserCai/sd-webui-discord-ex.git",
+            "description": "Supports distributed deployment of SD node's Stable Diffusion WebUi Discord bot",
+            "tags": [
+                "online",
+                "tab"
+            ],
+            "added": "2023-08-24"
+        },
+        {
+            "name": "CivitAI Browser+",
+            "url": "https://ghp.ci/https://github.com/BlafKing/sd-civitai-browser-plus.git",
+            "description": "Extension to access CivitAI via WebUI: download, delete, scan for updates, list installed models, assign tags, and boost downloads with multi-threading.",
+            "tags": [
+                "script",
+                "tab",
+                "online"
+            ],
+            "added": "2023-08-24"
+        },
+        {
+            "name": "Img2img batch interrogator",
+            "url": "https://ghp.ci/https://github.com/Alvi-alvarez/sd-Img2img-batch-interrogator.git",
+            "description": "The extension runs the interrogator before processing each image",
+            "tags": [
+                "script"
+            ],
+            "added": "2023-08-31"
+        },
+        {
+            "name": "SD Masonry Gallery",
+            "url": "https://ghp.ci/https://github.com/bit9labs/sd-masonry.git",
+            "description": "An images tab to display local images in a compact masonry gallery.",
+            "tags": [
+                "script",
+                "tab",
+                "UI related",
+                "online"
+            ],
+            "added": "2023-09-05"
+        },
+        {
+            "name": "sd-webui-depth-lib",
+            "url": "https://ghp.ci/https://github.com/wywywywy/sd-webui-depth-lib.git",
+            "description": "Depth map library for use with the ControlNet extension",
+            "tags": [
+                "tab"
+            ],
+            "added": "2023-09-07"
+        },
+        {
+            "name": "Stable Diffusion Webui Civitai Helper",
+            "url": "https://ghp.ci/https://github.com/zixaphir/Stable-Diffusion-Webui-Civitai-Helper.git",
+            "description": "Download or populate models with metadata and preview image from civitai.com",
+            "added": "2023-05-16",
+            "tags": [
+                "tab",
+                "UI related",
+                "online"
+            ]
+        },
+        {
+            "name": "Scenario loader",
+            "url": "https://ghp.ci/https://github.com/Chaest/sd-webui-sc-loader.git",
+            "description": "A series of tool to make it easier to create images.",
+            "tags": [
+                "script",
+                "tab",
+                "dropdown",
+                "UI related",
+                "prompting",
+                "extras"
+            ],
+            "added": "2023-09-09"
+        },
+        {
+            "name": "PromptsBrowser",
+            "url": "https://ghp.ci/https://github.com/AlpacaInTheNight/PromptsBrowser.git",
+            "description": "An extension to quickly work with, explore, and catalog prompts.",
+            "tags": [
+                "UI related",
+                "prompting"
+            ],
+            "added": "2023-09-15"
+        },
+        {
+            "name": "Model Mixer",
+            "url": "https://ghp.ci/https://github.com/wkpark/sd-webui-model-mixer.git",
+            "description": "Checkpoint Model Mixer/Merger extension - merges models without saving a merged model, and is used for image generation. Support Merge Block Weights, XYZ plots, etc.",
+            "tags": [
+                "models",
+                "manipulations"
+            ],
+            "added": "2023-09-16"
+        },
+        {
+            "name": "Fast PNG Info",
+            "url": "https://ghp.ci/https://github.com/NoCrypt/sd-fast-pnginfo.git",
+            "description": "Allows you to view PNG Info of an image without upload to webui's backend server, significantly faster when webui is hosted remotely like on Colab.",
+            "tags": [
+                "tab"
+            ],
+            "added": "2023-09-17"
+        },
+        {
+            "name": "sd-webui-mov2mov",
+            "url": "https://ghp.ci/https://github.com/Scholar01/sd-webui-mov2mov.git",
+            "description": "Process videos frame by frame and automatically merge and export",
+            "tags": [
+                "script",
+                "tab",
+                "animation"
+            ],
+            "added": "2023-09-24"
+        },
+        {
+            "name": "EasyPhoto",
+            "url": "https://ghp.ci/https://github.com/aigc-apps/sd-webui-EasyPhoto.git",
+            "description": "Support easy photo generation with an online-trained LoRA model that guarantees high-quality output images closely relevant to the input.",
+            "tags": [
+                "script",
+                "tab",
+                "training",
+                "manipulations"
+            ],
+            "added": "2023-10-01"
+        },
+        {
+            "name": "sd-webui-rich-text",
+            "url": "https://ghp.ci/https://github.com/songweige/sd-webui-rich-text.git",
+            "description": "An extension allows using a rich-text editor for text-to-image generation (https://ghp.ci/https://github.com/songweige/rich-text-to-image).",
+            "tags": [
+                "tab",
+                "UI related",
+                "prompting",
+                "editing",
+                "manipulations",
+                "online"
+            ],
+            "added": "2023-10-01"
+        },
+        {
+            "name": "sd-webui-bg-mask",
+            "url": "https://ghp.ci/https://github.com/Scholar01/sd-webui-bg-mask.git",
+            "description": "Generate a mask for the image background",
+            "tags": [
+                "editing"
+            ],
+            "added": "2023-09-30"
+        },
+        {
+            "name": "Ranbooru",
+            "url": "https://ghp.ci/https://github.com/Inzaniak/sd-webui-ranbooru.git",
+            "description": "Get random prompts from different boorus with a lot of creative features to influence the prompts. Works with txt2img and img2img",
+            "tags": [
+                "script",
+                "dropdown",
+                "prompting",
+                "online"
+            ],
+            "added": "2023-10-01"
+        },
+        {
+            "name": "CivBrowser",
+            "url": "https://ghp.ci/https://github.com/SignalFlagZ/sd-webui-civbrowser.git",
+            "description": "Extension to search and download Civitai models in multiple tabs. Save model information. Send sample infotext to txt2img.",
+            "tags": [
+                "script",
+                "tab",
+                "online"
+            ],
+            "added": "2023-10-02"
+        },
+        {
+            "name": "NSFW Blurrer-NSFWJS",
+            "url": "https://ghp.ci/https://github.com/aria1th/sd-webui-nsfw-filter.git",
+            "description": "Blurs NSFW images using NSFWJS, based on onnxmodel ",
+            "tags": [
+                "script",
+                "manipulations"
+            ],
+            "added": "2023-10-17"
+        },
+        {
+            "name": "NegPiP",
+            "url": "https://ghp.ci/https://github.com/hako-mikan/sd-webui-negpip.git",
+            "description": "Enable negative strength in the prompt. This will have a stronger effect than a negative prompt.",
+            "tags": [
+                "manipulations"
+            ],
+            "added": "2023-10-17"
+        },
+        {
+            "name": "CD(Color/Detail) Tuner",
+            "url": "https://ghp.ci/https://github.com/hako-mikan/sd-webui-cd-tuner.git",
+            "description": "Adjust color tone, brightness, and level of detailing using a different mechanism of LoRA or ADtailer",
+            "tags": [
+                "manipulations"
+            ],
+            "added": "2023-10-17"
+        },
+        {
+            "name": "DevDark theme",
+            "url": "https://ghp.ci/https://github.com/devdarktheme/stable-diffusion-webui-devdark.git",
+            "description": "Custom css based on Catppuccin, enable / disabled via extensions tab.",
+            "tags": [
+                "UI related"
+            ],
+            "added": "2023-10-17"
+        },
+        {
+            "name": "auxiliary API",
+            "url": "https://ghp.ci/https://github.com/aria1th/webui-model-uploader.git",
+            "description": "Adds API routes for uploading, removing, syncing models and etc",
+            "tags": [
+                "script"
+            ],
+            "added": "2023-10-17"
+        },
+        {
+            "name": "ReActor",
+            "url": "https://ghp.ci/https://github.com/Gourieff/sd-webui-reactor.git",
+            "description": "Fast and Simple FaceSwap Extension with a lot of improvements. Read README.md, additional installation steps required",
+            "tags": [
+                "editing",
+                "manipulations"
+            ],
+            "added": "2023-10-17"
+        },
+        {
+            "name": "TensorRT",
+            "url": "https://ghp.ci/https://github.com/NVIDIA/Stable-Diffusion-WebUI-TensorRT",
+            "description": "TensorRT acceleration for Stable Diffusion on NVIDIA RTX GPUs.",
+            "tags": [
+                "tab",
+                "models"
+            ],
+            "added": "2023-10-19"
+        },
+        {
+            "name": "encrypt-image",
+            "url": "https://ghp.ci/https://github.com/viyiviyi/sd-encrypt-image.git",
+            "description": "Encrypt and save the image to the disk to reduce the risk of account suspension when storing images in public clouds. When installing and starting, you need to add the parameter --encrypt-pass=your password.",
+            "tags": [
+                "script"
+            ],
+            "added": "2023-10-19"
+        },
+        {
+            "name": "NudeNet NSFW Censor",
+            "url": "https://ghp.ci/https://github.com/w-e-w/sd-webui-nudenet-nsfw-censor.git",
+            "description": "Customizable detection and censoring of NSFW portions within an image using NudeNet.",
+            "tags": [
+                "editing",
+                "extras"
+            ],
+            "added": "2023-10-22"
+        },
+        {
+            "name": "Latent Consistency Models",
+            "url": "https://ghp.ci/https://github.com/0xbitches/sd-webui-lcm.git",
+            "description": "Generate high quality images in just 4 steps. Run Latent Consistency Models with Automatic1111.",
+            "tags": [
+                "tab"
+            ],
+            "added": "2023-10-22"
+        },
+        {
+            "name": "CADS",
+            "url": "https://ghp.ci/https://github.com/v0xie/sd-webui-cads.git",
+            "description": "CADS greatly increases diversity of generated images by adding scheduled noise to the conditioning at inference time; an implementation of the novel method described in arXiv:2310.17347 [cs.CV].",
+            "tags": [
+                "dropdown",
+                "manipulations"
+            ],
+            "added": "2023-11-01"
+        },
+        {
+            "name": "sd-webui-facefusion",
+            "url": "https://ghp.ci/https://github.com/diffus-me/sd-webui-facefusion",
+            "description": "Video face swapper and enhancer.",
+            "tags": [
+                "tab",
+                "editing"
+            ],
+            "added": "2023-11-01"
+        },
+        {
+            "name": "Hotshot-XL-Automatic1111",
+            "url": "https://ghp.ci/https://github.com/hotshotco/Hotshot-XL-Automatic1111.git",
+            "description": "State-of-the-art AI text-to-GIF model trained to work alongside Stable Diffusion XL",
+            "tags": [
+                "tab",
+                "animation"
+            ],
+            "added": "2023-11-03"
+        },
+        {
+            "name": "Inpaint difference",
+            "url": "https://ghp.ci/https://github.com/John-WL/sd-webui-inpaint-difference",
+            "description": "Use the difference between 2 images to generate an inpaint mask. Adds a new operation mode.",
+            "tags": [
+                "tab",
+                "UI related",
+                "manipulations"
+            ],
+            "added": "2023-11-03"
+        },
+        {
+            "name": "Temporal",
+            "url": "https://ghp.ci/https://github.com/Iniquitatis/sd-webui-temporal",
+            "description": "A \"loopback on steroids\" that allows either processing images in a slightly more advanced way, or making the morphing animations out of them.",
+            "tags": [
+                "script",
+                "animation"
+            ],
+            "added": "2023-11-04"
+        },
+        {
+            "name": "FaceChain",
+            "url": "https://ghp.ci/https://github.com/modelscope/facechain.git",
+            "description": "FaceChain is a deep-learning toolchain for generating your Digital-Twin. With a minimum of 1 portrait-photo, you can create a Digital-Twin of your own and start generating personal portraits in different settings ",
+            "tags": [
+                "script",
+                "tab",
+                "training",
+                "online"
+            ],
+            "added": "2023-11-05"
+        },
+        {
+            "name": "Stylez",
+            "url": "https://ghp.ci/https://github.com/javsezlol1/Stylez.git",
+            "description": "An improved styles Libary with 600+ built in styles. Prompt generation is included. Style creating/Editing. Auto CSV conversion to work with Stylez. CivitAI image browser",
+            "tags": [
+                "script",
+                "tab",
+                "UI related",
+                "prompting",
+                "online",
+                "query"
+            ],
+            "added": "2023-11-06"
+        },
+        {
+            "name": "sd-webui-panorama-tools",
+            "url": "https://ghp.ci/https://github.com/Flyguygx/sd-webui-panorama-tools.git",
+            "description": "Various tools for creating/editing/viewing 360 degree panoramic images.",
+            "tags": [
+                "tab",
+                "editing",
+                "manipulations"
+            ],
+            "added": "2023-11-06"
+        },
+        {
+            "name": "sd-webui-extended-style-saver",
+            "url": "https://ghp.ci/https://github.com/harukei-tech/sd-webui-extended-style-saver.git",
+            "description": "Save your AI prompts easily. This extension helps you keep important details like name, model, VAE, image size, prompt, and negative prompt for creating AI outputs.",
+            "tags": [
+                "script",
+                "UI related",
+                "prompting"
+            ],
+            "added": "2023-11-13"
+        },
+        {
+            "name": "Semantic Guidance",
+            "url": "https://ghp.ci/https://github.com/v0xie/sd-webui-semantic-guidance.git",
+            "description": "Adds an extra positive / negative prompt for modifying details without necessarily changing composition. Make subtle or major edits. Better negative prompting. Unofficial implementation of arXiv:2301.12247 [cs.CV]",
+            "tags": [
+                "dropdown",
+                "manipulations"
+            ],
+            "added": "2023-11-13"
+        },
+        {
+            "name": "SD Web UI Modal Info",
+            "url": "https://ghp.ci/https://github.com/luminouspear/sd-webui-modal-info.git",
+            "description": "Displays prompt information when image is in full screen.",
+            "tags": [
+                "UI related"
+            ],
+            "added": "2023-11-13"
+        },
+        {
+            "name": "A Person Mask Generator",
+            "url": "https://ghp.ci/https://github.com/djbielejeski/a-person-mask-generator.git",
+            "description": "Extension for Automatic1111 to automatically create masks for Background/Hair/Body/Face/Clothes in Img2Img",
+            "tags": [
+                "script",
+                "editing"
+            ],
+            "added": "2023-11-18"
+        },
+        {
+            "name": "Style variables",
+            "url": "https://ghp.ci/https://github.com/SirVeggie/extension-style-vars",
+            "description": "Use existing styles as variables in prompts",
+            "tags": [
+                "prompting"
+            ],
+            "added": "2023-11-18"
+        },
+        {
+            "name": "SD-WebUI API Payload Display",
+            "url": "https://ghp.ci/https://github.com/huchenlei/sd-webui-api-payload-display.git",
+            "description": "Display the corresponding API payload after each generation on WebUI",
+            "tags": [
+                "script"
+            ],
+            "added": "2023-11-23"
+        },
+        {
+            "name": "µ Detection Detailer",
+            "url": "https://ghp.ci/https://github.com/wkpark/uddetailer.git",
+            "description": "µ Detection Detailer. Fork of ddetailer. Supports bbox/segment object detection, auto-mask and inpainting using mmdetection, mediapipe and ultralytics. also supports ControlNet.",
+            "tags": [
+                "editing",
+                "manipulations"
+            ],
+            "added": "2023-11-25"
+        },
+        {
+            "name": "Lora Queue Helper",
+            "url": "https://ghp.ci/https://github.com/Yinzo/sd-webui-Lora-queue-helper.git",
+            "description": "A Script that help you generate a batch of Lora, using same prompt & settings. Helpful for compare Lora, Or just switching Lora easily without switch tab.",
+            "tags": [
+                "script"
+            ],
+            "added": "2023-11-26"
+        },
+        {
+            "name": "Deep Shrink Hires.fix",
+            "url": "https://ghp.ci/https://github.com/wcde/sd-webui-kohya-hiresfix.git",
+            "description": "Implementation of Kohya's Deep Shrink Hires.fix",
+            "tags": [
+                "manipulations"
+            ],
+            "added": "2023-11-26"
+        },
+        {
+            "name": "Test my prompt!",
+            "url": "https://ghp.ci/https://github.com/Extraltodeus/test_my_prompt.git",
+            "description": "Generate a series of images by successively removing segments of the prompt, allowing for comparison of their individual effects.",
+            "tags": [
+                "script",
+                "prompting"
+            ],
+            "added": "2023-12-01"
+        },
+        {
+            "name": "sd-webui-breadcrumbs",
+            "url": "https://ghp.ci/https://github.com/ThereforeGames/sd-webui-breadcrumbs.git",
+            "description": "Adds a breadcrumb trail and makes improvements to the Quicksettings menu.",
+            "tags": [
+                "UI related"
+            ],
+            "added": "2023-12-02"
+        },
+        {
+            "name": "Kohaku-NAI",
+            "url": "https://ghp.ci/https://github.com/KohakuBlueleaf/Kohaku-NAI",
+            "description": "A NovelAI client built for SD-WebUI.",
+            "tags": [
+                "script",
+                "online"
+            ],
+            "added": "2023-12-02"
+        },
+        {
+            "name": "Replacer - fast inpaint",
+            "url": "https://ghp.ci/https://github.com/light-and-ray/sd-webui-replacer.git",
+            "description": "Adds a tab for fast inpaint image by detection prompt. Requires sd-webui-segment-anything. It also useful for batch inpaint, and inpaint in video with AnimateDiff. Or you can just draw your own mask and use powerful hiresfix, or convenient controlnet fullres inpainting",
+            "tags": [
+                "tab",
+                "editing",
+                "animation",
+                "script"
+            ],
+            "added": "2023-12-06"
+        },
+        {
+            "name": "Color Correction Extras",
+            "url": "https://ghp.ci/https://github.com/light-and-ray/sd-webui-color-correction-extras.git",
+            "description": "Adds native color correction feature into \"Extras\" tab",
+            "tags": [
+                "extras"
+            ],
+            "added": "2023-12-09"
+        },
+        {
+            "name": "State Manager",
+            "url": "https://ghp.ci/https://github.com/SenshiSentou/sd-webui-state-manager.git",
+            "description": "A state manager to quickly save and return to previous configs in A1111",
+            "tags": [
+                "script",
+                "tab",
+                "UI related"
+            ],
+            "added": "2023-12-15"
+        },
+        {
+            "name": "Agent Attention",
+            "url": "https://ghp.ci/https://github.com/v0xie/sd-webui-agentattention.git",
+            "description": "Speed up image generation and improve image quality using Agent Attention! An unofficial implementation of the method in arXiv:2312.08874 [cs.CV]",
+            "tags": [
+                "dropdown",
+                "manipulations"
+            ],
+            "added": "2023-12-15"
+        },
+        {
+            "name": "Deepdanbooru object recognition",
+            "url": "https://ghp.ci/https://github.com/Jibaku789/sd-webui-deepdanbooru-object-recognition.git",
+            "description": "Interrogate Deepdanboru and identify objects in the images",
+            "tags": [
+                "tab",
+                "query"
+            ],
+            "added": "2023-12-16"
+        },
+        {
+            "name": "Deepdanbooru Tag2Folder",
+            "url": "https://ghp.ci/https://github.com/Jibaku789/sd-webui-deepdanbooru-tag2folder",
+            "description": "Using this script you can move images using deepdanbooru classification",
+            "tags": [
+                "tab",
+                "query"
+            ],
+            "added": "2024-01-03"
+        },
+        {
+            "name": "sd-webui-ocr",
+            "url": "https://ghp.ci/https://github.com/SpenserCai/sd-webui-ocr",
+            "description": "PaddleOCR's sd-webui extensions (pytorch implementation)",
+            "tags": [
+                "tab",
+                "query"
+            ],
+            "added": "2024-01-04"
+        },
+        {
+            "name": "Characteristic Guidance Web UI",
+            "url": "https://ghp.ci/https://github.com/scraed/CharacteristicGuidanceWebUI.git",
+            "description": "New guidance method improving classifier-free guidance, providing enhanced sample quality at large CFG scale. Compatible with existing sampling methods.",
+            "tags": [
+                "dropdown",
+                "manipulations",
+                "science"
+            ],
+            "added": "2024-01-04"
+        },
+        {
+            "name": "embedding-inspector",
+            "url": "https://ghp.ci/https://github.com/w-e-w/embedding-inspector.git",
+            "description": "Inspect any token(a word) or Textual-Inversion embeddings and find out which embeddings are similar. You can mix, modify, or create the embeddings in seconds.",
+            "added": "2022-12-06",
+            "tags": [
+                "tab",
+                "models"
+            ]
+        },
+        {
+            "name": "Lama cleaner as masked content",
+            "url": "https://ghp.ci/https://github.com/light-and-ray/sd-webui-lama-cleaner-masked-content.git",
+            "description": "Adds new \"Masked content\" value in inpaint tab. It can be useful to remove objects.\nAlso you can use lama cleaner and some other methods with this extension with no stable diffusion in extras tab",
+            "tags": [
+                "script",
+                "editing",
+                "manipulations",
+                "extras"
+            ],
+            "added": "2024-01-14"
+        },
+        {
+            "name": "Latent Regional Helper",
+            "url": "https://ghp.ci/https://github.com/safubuki/sd-webui-latent-regional-helper.git",
+            "description": "Simplify the region division settings for Latent Couple and Regional Prompter. Simply select from the drop-down list to output the setting values.",
+            "tags": [
+                "script",
+                "tab"
+            ],
+            "added": "2024-01-14"
+        },
+        {
+            "name": "Thumbnailizer",
+            "url": "https://ghp.ci/https://github.com/MNeMoNiCuZ/sd-webui-thumbnailizer.git",
+            "description": "A thumbnail gallery and set management tool. Generate and switch between different thumbnail sets for your checkpoints.",
+            "tags": [
+                "script",
+                "tab",
+                "UI related"
+            ],
+            "added": "2024-01-14"
+        },
+        {
+            "name": "GPT-4 Vision Image Captioner",
+            "url": "https://ghp.ci/https://github.com/SleeeepyZhou/sd-webui-GPT4V-Image-Captioner.git",
+            "description": "This extension utilizes the power of GPT-4 Vision API to provide image captioning capabilities through the Stable Diffusion Web UI. Requires a paid subscription to OpenAI.",
+            "tags": [
+                "tab",
+                "online"
+            ],
+            "added": "2024-01-14"
+        },
+        {
+            "name": "Video in Extras tab",
+            "url": "https://ghp.ci/https://github.com/light-and-ray/sd-webui-video-extras-tab.git",
+            "description": "This extension is needed to process video frame by frame inside extras tab.",
+            "tags": [
+                "tab",
+                "editing",
+                "animation",
+                "extras"
+            ],
+            "added": "2024-01-23"
+        },
+        {
+            "name": "Inpaint background",
+            "url": "https://ghp.ci/https://github.com/John-WL/sd-webui-inpaint-background.git",
+            "description": "Use rembg to generate an inpaint mask. Adds a new operation mode.",
+            "tags": [
+                "tab",
+                "UI related",
+                "manipulations"
+            ],
+            "added": "2024-01-23"
+        },
+        {
+            "name": "DAAM",
+            "url": "https://ghp.ci/https://github.com/kousw/stable-diffusion-webui-daam.git",
+            "description": "DAAM stands for Diffusion Attentive Attribution Maps. Enter the attention text (must be a string contained in the prompt) and run. An overlapping image with a heatmap for each attention will be generated along with the original image.",
+            "added": "2022-12-02",
+            "tags": [
+                "science"
+            ]
+        },
+        {
+            "name": "ControlNet Preprocessor in extras tab",
+            "url": "https://ghp.ci/https://github.com/light-and-ray/sd-webui-cn-in-extras-tab.git",
+            "description": "Adds controlnet preprocessing feature into Extras tab",
+            "tags": [
+                "script",
+                "dropdown",
+                "editing",
+                "extras"
+            ],
+            "added": "2024-02-06"
+        },
+        {
+            "name": "Stable Diffusion Database Manager",
+            "url": "https://ghp.ci/https://github.com/nicholas-ooi/stable-diffusion-database-manager.git",
+            "description": "Supports generating of images individually or in batches and insert them into one or multiple databases.",
+            "tags": [
+                "script"
+            ],
+            "added": "2024-02-06"
+        },
+        {
+            "name": "RPG-DiffusionMaster",
+            "url": "https://ghp.ci/https://github.com/zydxt/sd-webui-rpg-diffusionmaster",
+            "description": "Implementation of WebUI extension for RPG-DiffusionMaster. Utilizing the capabilities of the LLM model to generate Regional Prompts for better generation results.",
+            "tags": [
+                "script",
+                "dropdown",
+                "prompting",
+                "online"
+            ],
+            "added": "2024-02-07"
+        },
+        {
+            "name": "sd-webui-creaprompt",
+            "url": "https://ghp.ci/https://github.com/tritant/sd-webui-creaprompt.git",
+            "description": "This extension for A1111 generates wonderful prompts randomly",
+            "tags": [
+                "UI related",
+                "prompting"
+            ],
+            "added": "2024-02-09"
+        },
+        {
+            "name": "Workflow",
+            "url": "https://ghp.ci/https://github.com/Inzaniak/sd-webui-workflow",
+            "description": "Add a new panel in the img2img tab to streamline your image processing workflow.",
+            "tags": [
+                "script"
+            ],
+            "added": "2024-02-09"
+        },
+        {
+            "name": "QIC Console",
+            "url": "https://ghp.ci/https://github.com/SenshiSentou/sd-webui-qic-console",
+            "description": "Adds a console tab to allow for quick testing of Python and Javascript snippets. !!! WARNING DO NOT install this extension unless you are a developer !!!",
+            "tags": [
+                "tab"
+            ],
+            "added": "2024-02-11"
+        },
+        {
+            "name": "Custom AutoLaunch",
+            "url": "https://ghp.ci/https://github.com/w-e-w/sd-webui-custom-autolaunch.git",
+            "description": "AutoLaunch WebUI in non-default browser",
+            "tags": [
+                "script"
+            ],
+            "added": "2024-02-18"
+        },
+        {
+            "name": "SimpleTaggerEditor",
+            "url": "https://ghp.ci/https://github.com/davidkingzyb/SimpleTaggerEditor.git",
+            "description": "edit tagger from auto generated caption one by one",
+            "tags": [
+                "tab",
+                "editing",
+                "extras"
+            ],
+            "added": "2024-03-06"
+        },
+        {
+            "name": "ReSharpen",
+            "url": "https://ghp.ci/https://github.com/Haoming02/sd-webui-resharpen.git",
+            "description": "Increases/decreases the details of images",
+            "tags": [
+                "manipulations"
+            ],
+            "added": "2024-03-08"
+        },
+        {
+            "name": "Clear Screen",
+            "url": "https://ghp.ci/https://github.com/Haoming02/sd-webui-clear-screen.git",
+            "description": "Adds a button 🆑 to clear the console window",
+            "tags": [
+                "script"
+            ],
+            "added": "2024-03-08"
+        },
+        {
+            "name": "SD Webui Image Comparison",
+            "url": "https://ghp.ci/https://github.com/Haoming02/sd-webui-image-comparison.git",
+            "description": "Easily compare img2img results within the Webui",
+            "tags": [
+                "tab"
+            ],
+            "added": "2024-03-08"
+        },
+        {
+            "name": "SD Webui Tabs Extension",
+            "url": "https://ghp.ci/https://github.com/Haoming02/sd-webui-tabs-extension.git",
+            "description": "Reorganize extension accordion layout with tabs.",
+            "tags": [
+                "UI related"
+            ],
+            "added": "2024-03-08"
+        },
+        {
+            "name": "Mosaic Outpaint",
+            "url": "https://ghp.ci/https://github.com/Haoming02/sd-webui-mosaic-outpaint.git",
+            "description": "Outpainting without ControlNet",
+            "tags": [
+                "tab"
+            ],
+            "added": "2024-03-08"
+        },
+        {
+            "name": "SD Webui Boomer",
+            "url": "https://ghp.ci/https://github.com/Haoming02/sd-webui-boomer.git",
+            "description": "An Extension that reverts some UI changes",
+            "tags": [
+                "UI related"
+            ],
+            "added": "2024-03-08"
+        },
+        {
+            "name": "Diffusion Color Grading",
+            "url": "https://ghp.ci/https://github.com/Haoming02/sd-webui-diffusion-cg.git",
+            "description": "performs color grading based on the latent tensor value range",
+            "tags": [
+                "manipulations"
+            ],
+            "added": "2024-03-08"
+        },
+        {
+            "name": "Moar Generate Button",
+            "url": "https://ghp.ci/https://github.com/Haoming02/sd-webui-moar-generate.git",
+            "description": "Adds a 2nd Generate button",
+            "tags": [
+                "UI related"
+            ],
+            "added": "2024-03-08"
+        },
+        {
+            "name": "Old Photo Restoration",
+            "url": "https://ghp.ci/https://github.com/Haoming02/sd-webui-old-photo-restoration.git",
+            "description": "Bringing Old Photo Back to Life",
+            "tags": [
+                "extras"
+            ],
+            "added": "2024-03-08"
+        },
+        {
+            "name": "Mobile friendly UI tweaks",
+            "url": "https://ghp.ci/https://github.com/Haoming02/sd-webui-mobile-friendly.git",
+            "description": "UI tweaks to makes the web interface easier to use on mobile (portrait)",
+            "tags": [
+                "UI related"
+            ],
+            "added": "2024-03-08"
+        },
+        {
+            "name": "Easy Tag Insert",
+            "url": "https://ghp.ci/https://github.com/Haoming02/sd-webui-easy-tag-insert.git",
+            "description": "Button shortcuts for user-specified prompts",
+            "tags": [
+                "prompting"
+            ],
+            "added": "2024-03-09"
+        },
+        {
+            "name": "Token Downsampling",
+            "url": "https://ghp.ci/https://github.com/feffy380/sd-webui-token-downsampling.git",
+            "description": "ToDo implements an improved version of token merging (ToMe) to speed up inference with less quality loss",
+            "tags": [
+                "script",
+                "manipulations"
+            ],
+            "added": "2024-03-10"
+        },
+        {
+            "name": "Aspect Ratio Resolutions selector-xhox",
+            "url": "https://ghp.ci/https://github.com/xhoxye/sd-webui-ar_xhox.git",
+            "description": "Extension for stable-diffusion-webui adding image aspect ratio resolutions selector buttons.",
+            "tags": [
+                "UI related"
+            ],
+            "added": "2024-03-11"
+        },
+        {
+            "name": "Hires Fix Tweaks",
+            "url": "https://ghp.ci/https://github.com/w-e-w/sd-webui-hires-fix-tweaks.git",
+            "description": "Add additional options and features to hires fix - CFG, Batch count, Pormpting syntax, Output directory",
+            "tags": [
+                "script",
+                "prompting",
+                "manipulations"
+            ],
+            "added": "2024-03-13"
+        },
+        {
+            "name": "Simple Manga Maker",
+            "url": "https://ghp.ci/https://github.com/new-sankaku/stable-diffusion-webui-simple-manga-maker.git",
+            "description": "With simple operations, an extension that enables the creation and application of manga-style images.",
+            "tags": [
+                "tab",
+                "editing",
+                "online"
+            ],
+            "added": "2024-03-17"
+        },
+        {
+            "name": "Card Master",
+            "url": "https://ghp.ci/https://github.com/SenshiSentou/sd-webui-cardmaster.git",
+            "description": "Adds powerful tools to the \"extra network\" cards (esp. LoRAs), including detail views, easy application of activation texts to the negative prompt, partial application of activation texts that contain multiple sections, and automatic prompt cleanup when removing a LoRA. This extension was previously known as tinycards. Please remove the old version if you still have it installed.",
+            "tags": [
+                "UI related"
+            ],
+            "added": "2023-11-25"
+        },
+        {
+            "name": "cli-interruption",
+            "url": "https://ghp.ci/https://github.com/light-and-ray/sd-webui-cli-interruption.git",
+            "description": "Interrupt generation on SIGINT signal (Ctrl+C), instead of closing the server.",
+            "tags": [],
+            "added": "2024-03-26"
+        },
+        {
+            "name": "DemoFusion",
+            "url": "https://ghp.ci/https://github.com/sebaxakerhtc/sd-webui-demofusion.git",
+            "description": "DemoFusion as a tab for WebUI. DemoFusion: Democratising High-Resolution Image Generation With No 💰",
+            "tags": [
+                "script",
+                "tab",
+                "manipulations"
+            ],
+            "added": "2024-04-03"
+        },
+        {
+            "name": "Incantations",
+            "url": "https://ghp.ci/https://github.com/v0xie/sd-webui-incantations.git",
+            "description": "Implements multiple novel guidance algorithms to improve image quality, reduce concept bleeding, and enhance prompt following!",
+            "tags": [
+                "dropdown",
+                "manipulations"
+            ],
+            "added": "2024-04-03"
+        },
+        {
+            "name": "Old SD firstpasser",
+            "url": "https://ghp.ci/https://github.com/light-and-ray/sd-webui-old-sd-firstpasser.git",
+            "description": "Firstpass generation with old SD model, Loras, embedding, etc ",
+            "tags": [
+                "script",
+                "manipulations"
+            ],
+            "added": "2024-04-05"
+        },
+        {
+            "name": "SD Image Editor",
+            "url": "https://ghp.ci/https://github.com/sontungdo/sd-image-editor.git",
+            "description": "A fast and easy-to-use image editor for Stable Diffusion Web UI",
+            "tags": [
+                "tab",
+                "editing"
+            ],
+            "added": "2024-04-05"
+        },
+        {
+            "name": "A1111 SD WebUI DTG",
+            "url": "https://ghp.ci/https://github.com/KohakuBlueleaf/z-a1111-sd-webui-dtg",
+            "description": "A sd-webui extension for utilizing DanTagGen to \"upsample prompts\".",
+            "tags": [
+                "script",
+                "dropdown",
+                "prompting"
+            ],
+            "added": "2024-04-12"
+        },
+        {
+            "name": "TripoSR",
+            "url": "https://ghp.ci/https://github.com/AlbedoFire/sd-webui-triposr.git",
+            "description": "TripoSR image to 3D model",
+            "tags": [
+                "tab"
+            ],
+            "added": "2024-04-24"
+        },
+        {
+            "name": "Readme browser",
+            "url": "https://ghp.ci/https://github.com/light-and-ray/sd-webui-readme-browser.git",
+            "description": "This extension allows user to view readme files of extensions locally right inside sd-webui. Online will be used only if readme contains external media and links",
+            "tags": [
+                "dropdown",
+                "online",
+                "UI related"
+            ],
+            "added": "2024-04-26"
+        },
+        {
+            "name": "D2 Prompt Selector",
+            "url": "https://ghp.ci/https://github.com/da2el-ai/sd-d2-prompt-selector.git",
+            "description": "Insert prompts or random prompts on button click",
+            "tags": [
+                "prompting"
+            ],
+            "added": "2024-05-04"
+        },
+        {
+            "name": "Untitled Merger",
+            "url": "https://ghp.ci/https://github.com/silveroxides/sd-webui-untitledmerger.git",
+            "description": "Powerful merger that have very fast merge times and some novel merge modes.",
+            "tags": [
+                "tab",
+                "models"
+            ],
+            "added": "2024-05-11"
+        },
+        {
+            "name": "Hardware Info in metadata",
+            "url": "https://ghp.ci/https://github.com/light-and-ray/sd-webui-hardware-info-in-metadata.git",
+            "description": "Adds hardware info (gpu name, vram, cpu name, ram) and taken time into generated images' metadata",
+            "tags": [
+                "script"
+            ],
+            "added": "2024-05-18"
+        },
+        {
+            "name": "PNGINFO Beautify",
+            "url": "https://ghp.ci/https://github.com/bluelovers/sd-webui-pnginfo-beautify.git",
+            "description": "Stable Diffusion PNGINFO Beautify extension",
+            "tags": [
+                "UI related",
+                "prompting"
+            ],
+            "added": "2024-05-19"
+        },
+        {
+            "name": "InputAccordion Highlight",
+            "url": "https://ghp.ci/https://github.com/w-e-w/sd-webui-input-accordion-highlight.git",
+            "description": "Highlight InputAccordion when enabled",
+            "tags": [
+                "UI related"
+            ],
+            "added": "2024-05-20"
+        },
+        {
+            "name": "Metadata Utils",
+            "url": "https://ghp.ci/https://github.com/Tzigo/metadata_utils.git",
+            "description": "metadata utils can read/write metadata from/to .safetensor files",
+            "tags": [
+                "tab",
+                "models"
+            ],
+            "added": "2024-06-07"
+        },
+        {
+            "name": "webui-foooxus-prompt-expansion",
+            "url": "https://ghp.ci/https://github.com/power88/webui-fooocus-prompt-expansion.git",
+            "description": "a simple wrapper of fooocus prompt expansion engine in stable-diffusion-webui",
+            "tags": [
+                "prompting"
+            ],
+            "added": "2024-06-09"
+        },
+        {
+            "name": "Bilingual Localization Refactored Fork",
+            "url": "https://ghp.ci/https://github.com/bluelovers/sd-webui-bilingual-localization.git",
+            "description": "Refactored from journey-ad Bilingual translation, rewritten in TypeScript for improved bug fixes and performance enhancements.",
+            "tags": [
+                "UI related"
+            ],
+            "added": "2024-06-11"
+        },
+        {
+            "name": "SD-PPP",
+            "url": "https://ghp.ci/https://github.com/zombieyang/sd-ppp.git",
+            "description": "getting/sending picture from/to Photoshop with a simple connection. Make Photoshop become the workspace of your sd-webui",
+            "tags": [
+                "script"
+            ],
+            "added": "2024-06-15"
+        },
+        {
+            "name": "ControlNet preprocessor: Segment Anything",
+            "url": "https://ghp.ci/https://github.com/light-and-ray/sd-webui-cn-sam-preprocessor.git",
+            "description": "Segment Anything preprocessor for ControlNet (requires sd-webui-segment-anything)",
+            "tags": [
+                "manipulations"
+            ],
+            "added": "2024-06-15"
+        },
+        {
+            "name": "Aspect Ratio and Resolution Buttons (ar-plusplus)",
+            "url": "https://ghp.ci/https://github.com/altoiddealer/--sd-webui-ar-plusplus.git",
+            "description": "Fork of Aspect Ratio selector plus with optimal resolution calculation and rounding",
+            "tags": [
+                "UI related"
+            ],
+            "added": "2024-06-23"
+        },
+        {
+            "name": "ScramblePrompts [m9]",
+            "url": "https://ghp.ci/https://github.com/MarcusNyne/sd-scramble-prompts-m9.git",
+            "description": "Creates prompt variations during image generation by reordering prompts, removing prompts, and modifying prompt weights.  Helps to fine-tune your prompts.  Details in README.md",
+            "tags": [
+                "prompting"
+            ],
+            "added": "2024-07-01"
+        },
+        {
+            "name": "TweakWeights [m9]",
+            "url": "https://ghp.ci/https://github.com/MarcusNyne/sd-tweak-weights-m9.git",
+            "description": "Creates prompt variations during image generation by modifying prompt weights matching specified keywords.  Helps to fine-tune your prompts.  Details in README.md",
+            "tags": [
+                "prompting"
+            ],
+            "added": "2024-07-01"
+        },
+        {
+            "name": "Prevent interruption",
+            "url": "https://ghp.ci/https://github.com/light-and-ray/sd-webui-prevent-interruption.git",
+            "description": "A switch in page footer to prevent user from accidental interrupting",
+            "tags": [
+                "UI related"
+            ],
+            "added": "2024-07-01"
+        },
+        {
+            "name": "Waifu2x Upscaler",
+            "url": "https://ghp.ci/https://github.com/light-and-ray/sd-webui-waifu2x-upscaler.git",
+            "description": "A fast open-source NN upscaler from 2015",
+            "tags": [
+                "editing",
+                "extras"
+            ],
+            "added": "2024-07-01"
+        },
+        {
+            "name": "sd-webui-udav2",
+            "url": "https://ghp.ci/https://github.com/MackinationsAi/sd-webui-udav2.git",
+            "description": "Integration of the Upgraded-Depth-Anything-V2 - UDAV2 models & UI into an a1111 extension.",
+            "tags": [
+                "tab",
+                "animation"
+            ],
+            "added": "2024-07-01"
+        },
+        {
+            "name": "Topaz Photo AI integration",
+            "url": "https://ghp.ci/https://github.com/light-and-ray/sd-webui-topaz-photo-ai-integration.git",
+            "description": "Integrates upscaling feature from Topaz's Photo AI paid software, so you can use it inside hires fix, upscaler_for_img2img or in extras tab. Also there is a script for Sharpen and other features inside extras tab",
+            "tags": [
+                "editing",
+                "script",
+                "extras"
+            ],
+            "added": "2024-07-01"
+        },
+        {
+            "name": "Detail Daemon",
+            "url": "https://ghp.ci/https://github.com/muerrilla/sd-webui-detail-daemon.git",
+            "description": "Control amount of detail/smoothness during generation by adjusting the sigmas schedule",
+            "tags": [
+                "manipulations"
+            ],
+            "added": "2024-07-02"
+        },
+        {
+            "name": "Yandere Inpainting as masked content",
+            "url": "https://ghp.ci/https://github.com/light-and-ray/sd-webui-yandere-inpaint-masked-content.git",
+            "description": "Integrates Yandere Inpainting ESRGAN model into Inpaint tab as masked content method. Fits for removing small objects or watermarks in anime art",
+            "tags": [
+                "UI related",
+                "manipulations"
+            ],
+            "added": "2024-07-02"
+        },
+        {
+            "name": "Multi-Prompt Manager",
+            "url": "https://ghp.ci/https://github.com/camdenFletcher03/sd-webui-Multi-Prompt-Manager.git",
+            "description": "The Multi-Prompt Manager Extension for stable-diffusion-webui allows easy management of multiple prompts. Create, save, edit, and delete prompts, and quickly switch between them without having to retype them manually.",
+            "tags": [
+                "prompting"
+            ],
+            "added": "2024-07-11"
+        },
+        {
+            "name": "Resynthesizer as masked content",
+            "url": "https://ghp.ci/https://github.com/light-and-ray/sd-webui-resynthesizer-masked-content.git",
+            "description": "Integrates Resynthesizer old content-aware fill algorithm into Inpaint tab as masked content method",
+            "tags": [
+                "UI related",
+                "manipulations"
+            ],
+            "added": "2024-07-17"
+        },
+        {
+            "name": "Toggle light dark",
+            "url": "https://ghp.ci/https://github.com/light-and-ray/sd-webui-toggle-dark-light.git",
+            "description": "A little button in top-right which toggles UI theme",
+            "tags": [
+                "UI related"
+            ],
+            "added": "2024-07-17"
+        },
+        {
+            "name": "Manga Inpainting",
+            "url": "https://ghp.ci/https://github.com/light-and-ray/sd-webui-manga-inpainting.git",
+            "description": "A network for removing something in manga. Requires controlnet and lama-cleaner-masked-content",
+            "tags": [
+                "manipulations",
+                "extras"
+            ],
+            "added": "2024-07-17"
+        },
+        {
+            "name": "sd-queue",
+            "url": "https://ghp.ci/https://github.com/nmygle/sd-queue.git",
+            "description": "It is an extension that provides an API primarily for queuing tasks, using a simple task manager created with Pure Python's deque and threading.",
+            "tags": [
+                "script"
+            ],
+            "added": "2024-07-21"
+        },
+        {
+            "name": "chara-searcher",
+            "url": "https://ghp.ci/https://github.com/NON906/chara-searcher.git",
+            "description": "This is a extension for 'character images search' from image and tags.\n- Extract characters from multiple images or videos (background is automatically removed).\n- You can search the extracted character images by image or tags.\n- Search results can be exported and used as is for learning Stable Diffusion's Lora, etc.",
+            "tags": [
+                "tab",
+                "editing",
+                "query"
+            ],
+            "added": "2024-07-22"
+        },
+        {
+            "name": "AMD FSR 1.0 integration",
+            "url": "https://ghp.ci/https://github.com/AndreyRGW/sd-webui-fsr-integration.git",
+            "description": "Integrates upscaling feature from AMD FSR, so you can use it inside hires fix, upscaler_for_img2img or in extras tab.",
+            "tags": [
+                "editing",
+                "script",
+                "extras"
+            ],
+            "added": "2024-07-22"
+        },
+        {
+            "name": "stupid-nsfw-card-blur-a1111",
+            "url": "https://ghp.ci/https://github.com/CurtisDS/stupid-nsfw-card-blur-a1111.git",
+            "description": "Blurs or hides card thumbnails if the path to the preview thumbnail contains the string 'nsfw'",
+            "tags": [
+                "UI related"
+            ],
+            "added": "2024-07-24"
+        },
+        {
+            "name": "extra-network-side-panel-for-a1111",
+            "url": "https://ghp.ci/https://github.com/CurtisDS/extra-network-side-panel-for-a1111.git",
+            "description": "Adds a toggle to move the extra network cards to the side of the screen ",
+            "tags": [
+                "UI related"
+            ],
+            "added": "2024-07-25"
+        },
+        {
+            "name": "Face manipulations - extras",
+            "url": "https://ghp.ci/https://github.com/light-and-ray/sd-webui-face-manipulation-extras.git",
+            "description": "Adds zerodim model zerodim-ffhq-x256 model into Extras tab. Changing of age, gender, ethnicity, hair, facial hair, glasses",
+            "tags": [
+                "manipulations",
+                "editing"
+            ],
+            "added": "2024-07-29"
+        },
+        {
+            "name": "Stable Diffusion PNGINFO Injection extension",
+            "url": "https://ghp.ci/https://github.com/bluelovers/sd-webui-pnginfo-injection.git",
+            "description": "This extension can add more PNGINFO fields to the PNG files generated by Stable Diffusion WebUI, such as the hash values of Civitai resources.",
+            "tags": [
+                "script",
+                "UI related"
+            ],
+            "added": "2024-08-07"
+        },
+        {
+            "name": "sd-webui-decadetw-auto-prompt-llm",
+            "url": "https://ghp.ci/https://github.com/xlinx/sd-webui-decadetw-auto-prompt-llm.git",
+            "description": "Auto Prompt with LLM. Read README.md, additional installation steps required",
+            "tags": [
+                "prompting"
+            ],
+            "added": "2024-08-09"
+        },
+        {
+            "name": "GeekyRemB",
+            "url": "https://ghp.ci/https://github.com/GeekyGhost/Automatic1111-Geeky-Remb.git",
+            "description": "Advanced Background Removal for Automatic1111 Web UI. Offers multiple AI models, flexible background options, chroma key support, alpha matting, and more for professional-quality image editing.",
+            "tags": [
+                "editing",
+                "tab"
+            ],
+            "added": "2024-08-19"
+        },
+        {
+            "name": "img2img-hires-fix",
+            "url": "https://ghp.ci/https://github.com/Amadeus-AI/img2img-hires-fix.git",
+            "description": "Hires-Fix upscale right after the img2img process, using its latent.",
+            "tags": [
+                "script",
+                "manipulations"
+            ],
+            "added": "2024-09-17"
+        },
+        {
+            "name": "Diffusion Cocktail (Ditail)",
+            "url": "https://ghp.ci/https://github.com/MAPS-research/sd-webui-ditail.git",
+            "description": "'Diffusion Cocktail' (Ditail) offers a training-free method for novel image generations and fine-grained manipulations of content/style, enabling flexible integrations of existing pre-trained Diffusion models and LoRAs.",
+            "tags": [
+                "manipulations"
+            ],
+            "added": "2024-09-17"
+        },
+        {
+            "name": "sd-webui-live-portrait",
+            "url": "https://ghp.ci/https://github.com/dimitribarbot/sd-webui-live-portrait.git",
+            "description": "This extension integrates LivePortrait into WebUI enabling efficient portrait animation with stitching and retargeting control.",
+            "tags": [
+                "script",
+                "tab",
+                "editing"
+            ],
+            "added": "2024-09-17"
+        }
+    ]
+}

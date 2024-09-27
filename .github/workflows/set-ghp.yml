@@ -1,0 +1,37 @@
+name: Update Workflow
+
+on:
+  schedule:
+    - cron: '0 10 * * 5'
+  workflow_dispatch:
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout current repository
+        uses: actions/checkout@v2
+
+      - name: Clone stable-diffusion-webui-extensions
+        run: |
+          mkdir -p /tmp/sdwe
+          git clone https://github.com/AUTOMATIC1111/stable-diffusion-webui-extensions /tmp/sdwe
+          rm -rf README.md /tmp/sdwe/.github/
+
+      - name: Update JSON files
+        run: |
+          find /tmp/sdwe -name '*.json' -exec sed -i 's|https://github.com|https://ghp.ci/https://github.com|g' {} +
+
+      - name: Sync files
+        run: |
+          rsync -av --ignore-existing /tmp/sdwe/ ./ # 复制新文件
+          rsync -av --update /tmp/sdwe/ ./ # 更新已有文件
+
+      - name: Commit and push changes
+        run: |
+          git config --global user.name "GitHub Action"
+          git config --global user.email "action@github.com"
+          git add .
+          git commit -m "Update" || echo "No changes to commit"
+          git push

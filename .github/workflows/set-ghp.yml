@@ -17,7 +17,7 @@ jobs:
         run: |
           mkdir -p /tmp/sdwe
           git clone https://github.com/AUTOMATIC1111/stable-diffusion-webui-extensions /tmp/sdwe
-          rm -rf README.md /tmp/sdwe/.github/
+          rm -rf /tmp/sdwe/README.md /tmp/sdwe/.github/ /tmp/sdwe/.git/
 
       - name: Update JSON files
         run: |
@@ -30,8 +30,8 @@ jobs:
 
       - name: Commit and push changes
         run: |
-          git config --global user.name "GitHub Action"
-          git config --global user.email "action@github.com"
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add .
           git commit -m "Update" || echo "No changes to commit"
           git push

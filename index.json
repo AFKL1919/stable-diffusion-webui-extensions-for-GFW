@@ -913,16 +913,6 @@
             ]
         },
         {
-            "name": "Stable Horde Client",
-            "url": "https://ghp.ci/https://github.com/natanjunges/stable-diffusion-webui-stable-horde.git",
-            "description": "Stable Horde Client. Generate pictures using other user's PC. Useful if u have no GPU.",
-            "added": "2023-01-11",
-            "tags": [
-                "tab",
-                "online"
-            ]
-        },
-        {
             "name": "Discord Rich Presence",
             "url": "https://ghp.ci/https://github.com/kabachuha/discord-rpc-for-automatic1111-webui.git",
             "description": "Provides connection to Discord RPC, showing a fancy table in the user profile.",
@@ -3395,6 +3385,35 @@
                 "prompting"
             ],
             "added": "2024-09-29"
+        },
+        {
+            "name": "SD Web UI UX",
+            "url": "https://ghp.ci/https://github.com/anapnoe/sd-webui-ux.git",
+            "description": "A bespoke, highly adaptable, blazing fast user interface that offers unmatched optimization and flexibility.",
+            "tags": [
+                "tab",
+                "UI related"
+            ],
+            "added": "2024-10-23"
+        },
+        {
+            "name": "Stable Horde Client",
+            "url": "https://ghp.ci/https://github.com/w-e-w/stable-diffusion-webui-stable-horde.git",
+            "description": "Stable Horde Client. Generate pictures using other user's PC. Useful if u have no GPU.",
+            "added": "2023-01-11",
+            "tags": [
+                "tab",
+                "online"
+            ]
+        },
+        {
+            "name": "sd-webui-quickrecents",
+            "url": "https://ghp.ci/https://github.com/MINENEMA/sd-webui-quickrecents.git",
+            "description": "View recent generations and get their generation parameters straight from the txt2img/img2img tabs",
+            "tags": [
+                "UI related"
+            ],
+            "added": "2024-10-24"
         }
     ]
 }
